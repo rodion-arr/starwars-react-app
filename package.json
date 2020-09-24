@@ -1,0 +1,30 @@
+{
+  "name": "starwars-react-app",
+  "version": "1.0.0",
+  "description": "May the Force be with you!",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db-update": "./bin/db-update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodion-arr/starwars-react-app.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "pwa",
+    "starwars"
+  ],
+  "author": "Rodion Abdurakhimov <rodion.arr.web@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodion-arr/starwars-react-app/issues"
+  },
+  "homepage": "https://github.com/rodion-arr/starwars-react-app#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}

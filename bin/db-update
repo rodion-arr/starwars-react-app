@@ -1,0 +1,222 @@
+#!/usr/bin/env node
+const axios = require('axios').default;
+const fs = require('fs').promises;
+const path = require('path');
+
+const swApiBaseUrl = 'https://swapi.dev/api';
+const apis = ['planets', 'films', 'vehicles', 'starships', 'species', 'people'];
+
+const getIdFromApiUrl = (url) => {
+  apis.map((resource) => {
+    url = url.replace(`http://swapi.dev/api/${resource}/`, '');
+  })
+  return url.replace('/', '');
+}
+
+const fetchPeople = async () => {
+  let next = 'https://swapi.dev/api/people';
+  const people = {};
+
+  try {
+    while (next) {
+      console.log('Requesting: ', next);
+
+      const result = await axios.get(next);
+
+      console.log('Response status: ', result.status);
+
+      result.data.results.map((entity) => {
+        // convert resource URLs to primary keys
+        entity.homeworld = getIdFromApiUrl(entity.homeworld);
+        entity.id = getIdFromApiUrl(entity.url);
+        entity.films = entity.films.map(item => getIdFromApiUrl(item));
+        entity.species = entity.species.map(item => getIdFromApiUrl(item));
+        entity.vehicles = entity.vehicles.map(item => getIdFromApiUrl(item));
+        entity.starships = entity.starships.map(item => getIdFromApiUrl(item));
+        delete entity.url;
+
+        people[entity.id] = entity;
+
+        next = result.data.next;
+      })
+    }
+
+    await fs.writeFile(path.join(__dirname, '..', 'db', 'people.json'), JSON.stringify(people));
+    console.log('People DB downloaded');
+  } catch (e) {
+    console.error('fetchPeople FAILED', e);
+  }
+};
+
+const fetchPlanets = async () => {
+  let next = 'https://swapi.dev/api/planets';
+  const data = {};
+
+  try {
+    while (next) {
+      console.log('Requesting: ', next);
+
+      const result = await axios.get(next);
+
+      console.log('Response status: ', result.status);
+
+      result.data.results.map((entity) => {
+        // convert resource URLs to primary keys
+        entity.id = getIdFromApiUrl(entity.url);
+        entity.residents = entity.residents.map(item => getIdFromApiUrl(item));
+        entity.films = entity.films.map(item => getIdFromApiUrl(item));
+        delete entity.url;
+
+        data[entity.id] = entity;
+
+        next = result.data.next;
+      })
+    }
+
+    await fs.writeFile(path.join(__dirname, '..', 'db', 'planets.json'), JSON.stringify(data));
+    console.log('Planets DB downloaded');
+  } catch (e) {
+    console.error('fetchPlanets FAILED', e);
+  }
+};
+
+
+const fetchSpecies = async () => {
+  let next = 'https://swapi.dev/api/species';
+  const data = {};
+
+  try {
+    while (next) {
+      console.log('Requesting: ', next);
+
+      const result = await axios.get(next);
+
+      console.log('Response status: ', result.status);
+
+      result.data.results.map((entity) => {
+        // convert resource URLs to primary keys
+        entity.id = getIdFromApiUrl(entity.url);
+        entity.people = entity.people.map(item => getIdFromApiUrl(item));
+        entity.films = entity.films.map(item => getIdFromApiUrl(item));
+        delete entity.url;
+
+        data[entity.id] = entity;
+
+        next = result.data.next;
+      })
+    }
+
+    await fs.writeFile(path.join(__dirname, '..', 'db', 'species.json'), JSON.stringify(data));
+    console.log('Species DB downloaded');
+  } catch (e) {
+    console.error('fetchSpecies FAILED', e);
+  }
+};
+
+const fetchStarships = async () => {
+  let next = 'https://swapi.dev/api/starships';
+  const data = {};
+
+  try {
+    while (next) {
+      console.log('Requesting: ', next);
+
+      const result = await axios.get(next);
+
+      console.log('Response status: ', result.status);
+
+      result.data.results.map((entity) => {
+        // convert resource URLs to primary keys
+        entity.id = getIdFromApiUrl(entity.url);
+        entity.pilots = entity.pilots.map(item => getIdFromApiUrl(item));
+        entity.films = entity.films.map(item => getIdFromApiUrl(item));
+        delete entity.url;
+
+        data[entity.id] = entity;
+
+        next = result.data.next;
+      })
+    }
+
+    await fs.writeFile(path.join(__dirname, '..', 'db', 'starships.json'), JSON.stringify(data));
+    console.log('Starships DB downloaded');
+  } catch (e) {
+    console.error('fetchStarships FAILED', e);
+  }
+};
+
+const fetchVehicles = async () => {
+  let next = 'https://swapi.dev/api/vehicles';
+  const data = {};
+
+  try {
+    while (next) {
+      console.log('Requesting: ', next);
+
+      const result = await axios.get(next);
+
+      console.log('Response status: ', result.status);
+
+      result.data.results.map((entity) => {
+        // convert resource URLs to primary keys
+        entity.id = getIdFromApiUrl(entity.url);
+        entity.pilots = entity.pilots.map(item => getIdFromApiUrl(item));
+        entity.films = entity.films.map(item => getIdFromApiUrl(item));
+        delete entity.url;
+
+        data[entity.id] = entity;
+
+        next = result.data.next;
+      })
+    }
+
+    await fs.writeFile(path.join(__dirname, '..', 'db', 'vehicles.json'), JSON.stringify(data));
+    console.log('Vehicles DB downloaded');
+  } catch (e) {
+    console.error('fetchVehicles FAILED', e);
+  }
+};
+
+const fetchFilms = async () => {
+  let next = 'https://swapi.dev/api/films';
+  const data = {};
+
+  try {
+    while (next) {
+      console.log('Requesting: ', next);
+
+      const result = await axios.get(next);
+
+      console.log('Response status: ', result.status);
+
+      result.data.results.map((entity) => {
+        // convert resource URLs to primary keys
+        entity.id = getIdFromApiUrl(entity.url);
+        entity.characters = entity.characters.map(item => getIdFromApiUrl(item));
+        entity.planets = entity.planets.map(item => getIdFromApiUrl(item));
+        entity.starships = entity.starships.map(item => getIdFromApiUrl(item));
+        entity.vehicles = entity.vehicles.map(item => getIdFromApiUrl(item));
+        entity.species = entity.species.map(item => getIdFromApiUrl(item));
+        delete entity.url;
+
+        data[entity.id] = entity;
+
+        next = result.data.next;
+      })
+    }
+
+    await fs.writeFile(path.join(__dirname, '..', 'db', 'films.json'), JSON.stringify(data));
+    console.log('Films DB downloaded');
+  } catch (e) {
+    console.error('fetchFilms FAILED', e);
+  }
+};
+
+(async () => {
+  fetchPeople();
+  fetchPlanets();
+  fetchSpecies();
+  fetchStarships();
+  fetchVehicles();
+  fetchFilms();
+})();
