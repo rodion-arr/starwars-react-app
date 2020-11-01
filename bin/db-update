@@ -41,7 +41,7 @@ const fetchPeople = async () => {
       })
     }
 
-    await fs.writeFile(path.join(__dirname, '..', 'db', 'people.json'), JSON.stringify(people));
+    await fs.writeFile(path.join(__dirname, '..', 'public', 'db', 'people.json'), JSON.stringify(people));
     console.log('People DB downloaded');
   } catch (e) {
     console.error('fetchPeople FAILED', e);
@@ -73,7 +73,7 @@ const fetchPlanets = async () => {
       })
     }
 
-    await fs.writeFile(path.join(__dirname, '..', 'db', 'planets.json'), JSON.stringify(data));
+    await fs.writeFile(path.join(__dirname, '..', 'public', 'db', 'planets.json'), JSON.stringify(data));
     console.log('Planets DB downloaded');
   } catch (e) {
     console.error('fetchPlanets FAILED', e);
@@ -106,7 +106,7 @@ const fetchSpecies = async () => {
       })
     }
 
-    await fs.writeFile(path.join(__dirname, '..', 'db', 'species.json'), JSON.stringify(data));
+    await fs.writeFile(path.join(__dirname, '..', 'public', 'db', 'species.json'), JSON.stringify(data));
     console.log('Species DB downloaded');
   } catch (e) {
     console.error('fetchSpecies FAILED', e);
@@ -138,7 +138,7 @@ const fetchStarships = async () => {
       })
     }
 
-    await fs.writeFile(path.join(__dirname, '..', 'db', 'starships.json'), JSON.stringify(data));
+    await fs.writeFile(path.join(__dirname, '..', 'public', 'db', 'starships.json'), JSON.stringify(data));
     console.log('Starships DB downloaded');
   } catch (e) {
     console.error('fetchStarships FAILED', e);
@@ -170,7 +170,7 @@ const fetchVehicles = async () => {
       })
     }
 
-    await fs.writeFile(path.join(__dirname, '..', 'db', 'vehicles.json'), JSON.stringify(data));
+    await fs.writeFile(path.join(__dirname, '..', 'public', 'db', 'vehicles.json'), JSON.stringify(data));
     console.log('Vehicles DB downloaded');
   } catch (e) {
     console.error('fetchVehicles FAILED', e);
@@ -205,7 +205,7 @@ const fetchFilms = async () => {
       })
     }
 
-    await fs.writeFile(path.join(__dirname, '..', 'db', 'films.json'), JSON.stringify(data));
+    await fs.writeFile(path.join(__dirname, '..', 'public', 'db', 'films.json'), JSON.stringify(data));
     console.log('Films DB downloaded');
   } catch (e) {
     console.error('fetchFilms FAILED', e);
