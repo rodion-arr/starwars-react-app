@@ -1,20 +1,24 @@
 body {
   background: url("images/header/bg.jpg");
+  color: #fff;
 
   --border-color-light: #b7b7b7
 }
 
 .header {
+  position: fixed;
+  top: 0;
   display: flex;
   align-content: center;
   justify-content: space-between;
   height: 60px;
+  width: 100%;
   background: #000000;
   border-bottom: solid 1px var(--border-color-light);
 
   &__logo {
-    background: no-repeat center/250px url("images/header/sw_logo_horizontal.png");
-    width: 250px;
+    background: no-repeat center/200px url("images/header/sw_logo_horizontal.png");
+    width: 200px;
   }
 }
 
@@ -41,5 +45,30 @@ body {
   svg {
     fill: var(--border-color-light);
     width: 40px;
+  }
+}
+
+.wrapper {
+  margin-top: 60px;
+}
+
+.home-banner {
+  background: no-repeat center/ cover url("images/home-banner/banner.jpg");
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__logo {
+    background: no-repeat center/200px url("images/home-banner/banner-logo.png");
+    width: 200px;
+    height: 100px;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 }
