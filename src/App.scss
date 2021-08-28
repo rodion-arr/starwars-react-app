@@ -1,8 +1,15 @@
+:root {
+  --border-color-light: #b7b7b7;
+  --main-color: #b7b7b7;
+  --global-padding: 10px;
+  --global-border-radius: 10px;
+
+  --img-border-color: #e15021;
+}
+
 body {
   background: url("images/header/bg.jpg");
-  color: #fff;
-
-  --border-color-light: #b7b7b7
+  color: var(--main-color);
 }
 
 .header {
@@ -44,7 +51,7 @@ body {
 
   svg {
     fill: var(--border-color-light);
-    width: 40px;
+    width: 30px;
   }
 }
 
@@ -70,5 +77,93 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 20px;
+  }
+}
+
+.catalog {
+  padding: 0 var(--global-padding);
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: solid var(--main-color) 1px;
+    border-bottom: solid var(--main-color) 1px;
+  }
+}
+
+.catalog-item {
+  border-radius: var(--global-border-radius);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 10px 0;
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__img {
+    text-align: center;
+    border-bottom: 2px solid var(--img-border-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    img {
+      height: 200px;
+    }
+  }
+}
+
+.catalog-item-info {
+  padding: var(--global-padding);
+  background-color: #1e1d1d;
+  border-radius: 0 0 var(--global-border-radius) var(--global-border-radius);
+
+  &__name {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.social-links {
+  &__text {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .social-links-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+      width: 25px;
+      height: 25px;
+      margin: 0 10px;
+
+      & .icon-wrap,
+      & .social-links-list__icon {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &--linkedin {
+        .social-links-list__icon {
+          background: no-repeat center/ cover url("images/footer/linkedin-logo.svg");
+        }
+      }
+
+      &--github {
+        .social-links-list__icon {
+          background: no-repeat center/ cover url("images/footer/github-logo.svg");
+        }
+      }
+    }
   }
 }
