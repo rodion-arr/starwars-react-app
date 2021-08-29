@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background: #000000;
+  border-bottom: solid 1px var(--border-color-light);
+
+  &__logo {
+    background: no-repeat center/200px url("../../images/header/sw_logo_horizontal.png");
+    width: 200px;
+  }
+}
+
+.burger-menu {
+  box-sizing: border-box;
+  width: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: solid 1px var(--border-color-light);
+
+  &__bar {
+    border: solid 2px var(--border-color-light);
+  }
+}
+
+.search {
+  width: 60px;
+  border-left: solid 1px var(--border-color-light);
+  display: flex;
+  justify-content: center;
+
+  svg {
+    fill: var(--border-color-light);
+    width: 30px;
+  }
+}

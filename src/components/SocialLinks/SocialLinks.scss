@@ -1,0 +1,39 @@
+.social-links {
+  &__text {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .social-links-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+      width: 25px;
+      height: 25px;
+      margin: 0 10px;
+
+      & .icon-wrap,
+      & .social-links-list__icon {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &--linkedin {
+        .social-links-list__icon {
+          background: no-repeat center/ cover url("../../images/footer/linkedin-logo.svg");
+        }
+      }
+
+      &--github {
+        .social-links-list__icon {
+          background: no-repeat center/ cover url("../../images/footer/github-logo.svg");
+        }
+      }
+    }
+  }
+}

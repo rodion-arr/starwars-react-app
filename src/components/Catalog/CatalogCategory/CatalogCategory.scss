@@ -1,0 +1,28 @@
+@use "../../../assets/styles/breakpoints";
+
+.catalog {
+  padding: 0 var(--global-padding);
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: solid var(--main-color) 1px;
+    border-bottom: solid var(--main-color) 1px;
+  }
+}
+
+.catalog-items-wrap {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoints.for-tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+  }
+}

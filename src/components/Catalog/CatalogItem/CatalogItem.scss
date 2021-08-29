@@ -1,0 +1,43 @@
+@use "../../../assets/styles/breakpoints";
+
+.catalog-item {
+  border-radius: var(--global-border-radius);
+  margin: 10px 0;
+
+  &:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__img {
+    text-align: center;
+    border-bottom: 2px solid var(--img-border-color);
+    border-radius: var(--global-border-radius) var(--global-border-radius) 0 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0, rgba(0, 0, 0, 0.06) 0 1px 2px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    img {
+      height: 200px;
+    }
+  }
+
+  @include breakpoints.for-tablet {
+    min-width: 340px;
+    margin: 10px;
+  }
+}
+
+.catalog-item-info {
+  padding: var(--global-padding);
+  background-color: #1e1d1d;
+  border-radius: 0 0 var(--global-border-radius) var(--global-border-radius);
+
+  &__name {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
