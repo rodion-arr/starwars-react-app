@@ -20,20 +20,27 @@ function App() {
         <div className="home-banner">
           <div className="home-banner__logo"/>
           <div className="home-banner__text">Welcome to StarWars catalog!</div>
+          <div className="home-banner__scroll scroll-animation">
+            <div className="scroll-animation__chevron" />
+            <div className="scroll-animation__chevron" />
+            <div className="scroll-animation__chevron" />
+          </div>
         </div>
         <div className="catalog">
           <h2 className="catalog__title">People</h2>
           <div className="catalog__items catalog-items-wrap">
-            <div className="catalog-item">
-              <a href="#" className="catalog-item__link">
-              <div className="catalog-item__img">
-                <img src="/assets/content/people/1.png" alt="Luke"/>
+            {(new Array(5)).fill(1).map(i => {
+              return <div className="catalog-item">
+                <a href="#" className="catalog-item__link">
+                  <div className="catalog-item__img">
+                    <img src="/assets/content/people/1.png" alt="Luke"/>
+                  </div>
+                  <div className="catalog-item__info catalog-item-info">
+                    <div className="catalog-item-info__name">Luke Skywalker</div>
+                  </div>
+                </a>
               </div>
-              <div className="catalog-item__info catalog-item-info">
-                <div className="catalog-item-info__name">Luke Skywalker</div>
-              </div>
-              </a>
-            </div>
+            })}
           </div>
         </div>
       </div>
