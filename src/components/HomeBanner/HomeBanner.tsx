@@ -6,7 +6,7 @@ export const HomeBanner = (): JSX.Element => {
     <div className="home-banner">
       <div className="home-banner__logo"/>
       <div className="home-banner__text">Welcome to StarWars catalog!</div>
-      <div className="home-banner__scroll scroll-animation">
+      <div className="home-banner__scroll scroll-animation" title="Scroll down for more content!">
         <div className="scroll-animation__chevron" />
         <div className="scroll-animation__chevron" />
         <div className="scroll-animation__chevron" />

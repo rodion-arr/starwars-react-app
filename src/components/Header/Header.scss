@@ -8,6 +8,7 @@
   width: 100%;
   background: #000000;
   border-bottom: solid 1px var(--border-color-light);
+  z-index: 1;
 
   &__logo {
     background: no-repeat center/200px url("../../images/header/sw_logo_horizontal.png");
@@ -29,14 +30,17 @@
   }
 }
 
-.search {
+.fork {
   width: 60px;
   border-left: solid 1px var(--border-color-light);
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  svg {
-    fill: var(--border-color-light);
+  &__github-icon {
+    display: block;
     width: 30px;
+    height: 30px;
+    background: no-repeat center/ cover url("../../images/footer/github-logo.svg");
   }
 }
