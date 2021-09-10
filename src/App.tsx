@@ -4,17 +4,23 @@ import {Header} from "./components/Header/Header";
 import {HomeBanner} from "./components/HomeBanner/HomeBanner";
 import {CatalogCategory} from "./components/Catalog/CatalogCategory/CatalogCategory";
 import {Footer} from "./components/Footer/Footer";
+import {PortalsEnum} from "./enums/portals.enum";
 
 function App() {
   return (
     <div className="sw-react-app">
-      <Header />
-      <div className="wrapper">
-        <HomeBanner />
-        <CatalogCategory title="People" />
-        <CatalogCategory title="Ships" />
+      <div className="page">
+        <Header />
+        <div className="content-wrapper">
+          <HomeBanner />
+          <CatalogCategory title="People" />
+          <CatalogCategory title="Ships" />
+        </div>
+        <Footer />
       </div>
-      <Footer />
+      <div className="portals">
+        <div id={PortalsEnum.SIDE_MENU} />
+      </div>
     </div>
   );
 }

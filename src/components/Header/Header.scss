@@ -16,20 +16,6 @@
   }
 }
 
-.burger-menu {
-  box-sizing: border-box;
-  width: 60px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border-right: solid 1px var(--border-color-light);
-
-  &__bar {
-    border: solid 2px var(--border-color-light);
-  }
-}
-
 .fork {
   width: 60px;
   border-left: solid 1px var(--border-color-light);

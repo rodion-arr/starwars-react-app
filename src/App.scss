@@ -7,6 +7,8 @@
   --global-border-radius: 10px;
 
   --img-border-color: #e15021;
+
+  --sidemenu-width: 300px;
 }
 
 body {
@@ -14,6 +16,20 @@ body {
   color: var(--main-color);
 }
 
-.wrapper {
+.content-wrapper {
   margin-top: 60px;
+}
+
+.page {
+  position: relative;
+  left: 0;
+  transition: left .5s ease-in-out;
+}
+
+.side-menu-opened {
+  & .page {
+    position: fixed;
+    left: var(--sidemenu-width);
+    width: 1000px;
+  }
 }
