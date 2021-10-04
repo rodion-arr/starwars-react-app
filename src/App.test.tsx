@@ -1,9 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import {BrowserRouter as Router} from "react-router-dom";
 
 test('renders welcome', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/welcome/i);
+  render(<Router><App /></Router>);
+  const linkElement = screen.getByText(/people/i);
   expect(linkElement).toBeInTheDocument();
 });
