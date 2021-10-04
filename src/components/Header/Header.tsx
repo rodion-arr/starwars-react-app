@@ -1,11 +1,13 @@
 import React from "react";
 import './Header.scss';
 import {MainMenu} from "../MainMenu/MainMenu";
+import {Link} from "react-router-dom";
+import {URI} from "../../routes/uri";
 
 export const Header = (): JSX.Element => {
   return <div className="header">
     <MainMenu />
-    <div className="header__logo"/>
+    <Link to={URI.home} className="header__logo" />
     <div className="header__fork fork">
       <a
         href="https://github.com/rodion-arr/starwars-react-app"
