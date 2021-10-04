@@ -13,8 +13,8 @@ export const CatalogCategory = ({
     <div className="catalog">
       <h2 className="catalog__title">{title}</h2>
       <div className="catalog__items catalog-items-wrap">
-        {(new Array(5)).fill(1).map(i => {
-          return <CatalogItem img={'/assets/content/people/1.png'} title={'Luke Skywalker'} />;
+        {(new Array(5)).fill(1).map((value, i) => {
+          return <CatalogItem key={i} img={'/assets/content/people/1.png'} title={'Luke Skywalker'} />;
         })}
       </div>
     </div>
