@@ -1,20 +1,17 @@
 import React from 'react';
 import './App.scss';
 import {Header} from "./components/Header/Header";
-import {HomeBanner} from "./components/HomeBanner/HomeBanner";
-import {CatalogCategory} from "./components/Catalog/CatalogCategory/CatalogCategory";
 import {Footer} from "./components/Footer/Footer";
 import {PortalsEnum} from "./enums/portals.enum";
+import {renderRoutes, RouteConfig} from "react-router-config";
 
-function App() {
+function App({ route }: RouteConfig) {
   return (
     <div className="sw-react-app">
       <div className="page">
         <Header />
         <div className="content-wrapper">
-          <HomeBanner />
-          <CatalogCategory title="People" />
-          <CatalogCategory title="Ships" />
+          {route && renderRoutes(route.routes)}
         </div>
         <Footer />
       </div>
