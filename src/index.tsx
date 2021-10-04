@@ -2,18 +2,22 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import {Suspense} from "react";
-import { renderRoutes } from "react-router-config";
+import {renderRoutes} from "react-router-config";
 import {routesConfig} from "./routes/routes";
-import { BrowserRouter as Router } from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 import './index.css';
+import {Provider} from "react-redux";
+import {state} from "./store/store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Suspense fallback={<div>Loading.....</div>}>
-        {renderRoutes(routesConfig)}
-      </Suspense>
-    </Router>
+    <Provider store={state}>
+      <Router>
+        <Suspense fallback={<div>Loading.....</div>}>
+          {renderRoutes(routesConfig)}
+        </Suspense>
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
