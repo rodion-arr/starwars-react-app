@@ -4,6 +4,7 @@ import {rootReducer} from "./root.reducer";
 
 export const state = configureStore({
   reducer: rootReducer,
-  middleware,
+  middleware: (getDefaultMiddleware => getDefaultMiddleware().concat(...middleware)),
 });
 
+export type AppDispatch = typeof state.dispatch;

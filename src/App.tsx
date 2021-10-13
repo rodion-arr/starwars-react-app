@@ -4,8 +4,11 @@ import {Header} from "./components/Header/Header";
 import {Footer} from "./components/Footer/Footer";
 import {PortalsEnum} from "./enums/portals.enum";
 import {renderRoutes, RouteConfig} from "react-router-config";
+import {useDb} from "./hooks/useDb";
 
 function App({ route }: RouteConfig) {
+  useDb();
+
   return (
     <div className="sw-react-app">
       <div className="page">
