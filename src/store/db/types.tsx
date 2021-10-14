@@ -3,6 +3,7 @@ import {Film} from "./entities/film.d";
 import {Planet} from "./entities/planet.d";
 import {Specie} from "./entities/specie.d";
 import {Starship} from "./entities/starship.d";
+import {Vehicle} from "./entities/vehicle.d";
 
 export const types = Object.freeze({
   GET_DB: '[DB] GET_DB',
@@ -20,4 +21,5 @@ export interface DbState {
   planets: Record<string, Planet> | null;
   species: Record<string, Specie> | null;
   starships: Record<string, Starship> | null;
+  vehicles: Record<string, Vehicle> | null;
 }
