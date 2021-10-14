@@ -4,11 +4,13 @@ import {dbActions} from "./actions";
 import {Char} from "./entities/char.d";
 import {Film} from "./entities/film.d";
 import {Planet} from "./entities/planet.d";
+import {Specie} from "./entities/specie.d";
 
 const initialState: DbState = {
   people: null,
   films: null,
   planets: null,
+  species: null,
 };
 
 export const dbSlice = createSlice({
@@ -34,6 +36,13 @@ export const dbSlice = createSlice({
       dbActions.fillPlanets.type,
       (state, action: PayloadAction<Record<string, Planet>>) => {
         state.planets = action.payload;
+      },
+    );
+
+    builder.addCase(
+      dbActions.fillSpecies.type,
+      (state, action: PayloadAction<Record<string, Specie>>) => {
+        state.species = action.payload;
       },
     );
   },
