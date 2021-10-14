@@ -6,12 +6,14 @@ import {DbService} from "../../services/db.service";
 import {Film} from "./entities/film.d";
 import {Planet} from "./entities/planet.d";
 import {Specie} from "./entities/specie.d";
+import {Starship} from "./entities/starship.d";
 
 export const dbActions = Object.freeze({
   fillPeople: createAction<Record<string, Char> | null>(types.FILL_PEOPLE),
   fillFilms: createAction<Record<string, Film> | null>(types.FILL_FILMS),
   fillPlanets: createAction<Record<string, Planet> | null>(types.FILL_PLANETS),
   fillSpecies: createAction<Record<string, Specie> | null>(types.FILL_SPECIES),
+  fillStarships: createAction<Record<string, Starship> | null>(types.FILL_STARSHIPS),
 
   // Async
   getDb: createAsyncThunk<
@@ -25,5 +27,6 @@ export const dbActions = Object.freeze({
       dispatch(dbActions.fillFilms(await DbService.loadDbFile('/db/films.json')))
       dispatch(dbActions.fillPlanets(await DbService.loadDbFile('/db/planets.json')))
       dispatch(dbActions.fillSpecies(await DbService.loadDbFile('/db/species.json')))
+      dispatch(dbActions.fillStarships(await DbService.loadDbFile('/db/starships.json')))
   }),
 });
