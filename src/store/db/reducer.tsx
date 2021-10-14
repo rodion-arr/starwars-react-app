@@ -3,10 +3,12 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {dbActions} from "./actions";
 import {Char} from "./entities/char.d";
 import {Film} from "./entities/film.d";
+import {Planet} from "./entities/planet.d";
 
 const initialState: DbState = {
   people: null,
   films: null,
+  planets: null,
 };
 
 export const dbSlice = createSlice({
@@ -25,6 +27,13 @@ export const dbSlice = createSlice({
       dbActions.fillFilms.type,
       (state, action: PayloadAction<Record<string, Film>>) => {
         state.films = action.payload;
+      },
+    );
+
+    builder.addCase(
+      dbActions.fillPlanets.type,
+      (state, action: PayloadAction<Record<string, Planet>>) => {
+        state.planets = action.payload;
       },
     );
   },
