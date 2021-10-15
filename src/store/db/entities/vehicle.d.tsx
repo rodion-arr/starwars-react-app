@@ -16,3 +16,8 @@ export interface Vehicle {
   edited: string;
   id: string;
 }
+
+export function isVehicle(object: unknown): object is Vehicle {
+  return Object.prototype.hasOwnProperty.call(object, 'name')
+    && Object.prototype.hasOwnProperty.call(object, 'vehicle_class');
+}

@@ -14,3 +14,8 @@ export interface Film {
   edited: string;
   id: string;
 }
+
+export function isFilm(object: unknown): object is Film {
+  return Object.prototype.hasOwnProperty.call(object, 'title')
+    && Object.prototype.hasOwnProperty.call(object, 'episode_id');
+}

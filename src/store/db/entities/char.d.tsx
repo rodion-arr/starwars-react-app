@@ -16,3 +16,9 @@ export interface Char {
   edited: string;
   id: string;
 }
+
+export function isChar(object: unknown): object is Char {
+  return Object.prototype.hasOwnProperty.call(object, 'name')
+    && Object.prototype.hasOwnProperty.call(object, 'height')
+    && Object.prototype.hasOwnProperty.call(object, 'gender');
+}

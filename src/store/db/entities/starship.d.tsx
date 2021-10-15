@@ -18,3 +18,8 @@ export interface Starship {
   edited: string;
   id: string;
 }
+
+export function isStarship(object: unknown): object is Starship {
+  return Object.prototype.hasOwnProperty.call(object, 'name')
+    && Object.prototype.hasOwnProperty.call(object, 'starship_class');
+}

@@ -1,22 +1,24 @@
 import './CatalogItem.scss';
 import React from "react";
+import {Link} from "react-router-dom";
 
 interface Props {
   img: string;
   title: string;
+  url: string
 }
 
-export const CatalogItem = ({img, title}: Props): JSX.Element => {
+export const CatalogItem = ({img, title, url}: Props): JSX.Element => {
   return (
     <div className="catalog-item">
-      <a href="#" className="catalog-item__link">
+      <Link to={url} className="catalog-item__link">
         <div className="catalog-item__img">
-          <img src={img} alt={`${title} | Image`}/>
+          <img src={img} alt={title} />
         </div>
         <div className="catalog-item__info catalog-item-info">
           <div className="catalog-item-info__name">{title}</div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

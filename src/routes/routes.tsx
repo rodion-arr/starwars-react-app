@@ -3,7 +3,7 @@ import {URI} from "./uri";
 import {RouteConfig} from "react-router-config";
 import App from "../App";
 
-const Home = React.lazy(() => import('../pages/Home'));
+const Home = React.lazy(() => import('../pages/Home/ConnectedHome'));
 const Films = React.lazy(() => import('../pages/Films'));
 const People = React.lazy(() => import('../pages/People'));
 const Planets = React.lazy(() => import('../pages/Planets'));

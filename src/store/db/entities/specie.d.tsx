@@ -15,3 +15,9 @@ export interface Specie {
   edited: string;
   id: string;
 }
+
+export function isSpecie(object: unknown): object is Specie {
+  return Object.prototype.hasOwnProperty.call(object, 'name')
+    && Object.prototype.hasOwnProperty.call(object, 'classification')
+    && Object.prototype.hasOwnProperty.call(object, 'skin_colors');
+}

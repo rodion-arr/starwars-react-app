@@ -14,3 +14,8 @@ export interface Planet {
   edited: string;
   id: string;
 }
+
+export function isPlanet(object: unknown): object is Planet {
+  return Object.prototype.hasOwnProperty.call(object, 'name')
+    && Object.prototype.hasOwnProperty.call(object, 'rotation_period');
+}

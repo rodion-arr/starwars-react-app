@@ -23,3 +23,5 @@ export interface DbState {
   starships: Record<string, Starship> | null;
   vehicles: Record<string, Vehicle> | null;
 }
+
+export type DbObject = Char | Film | Planet | Specie | Starship | Vehicle;
