@@ -1,6 +1,7 @@
 import './CatalogItem.scss';
 import React from "react";
 import {Link} from "react-router-dom";
+import {ImagesService} from "../../../services/images.service";
 
 interface Props {
   img: string;
@@ -13,7 +14,7 @@ export const CatalogItem = ({img, title, url}: Props): JSX.Element => {
     <div className="catalog-item">
       <Link to={url} className="catalog-item__link">
         <div className="catalog-item__img">
-          <img src={img} alt={title} />
+          <img src={img} alt={title} onError={ImagesService.imageErrorHandler} />
         </div>
         <div className="catalog-item__info catalog-item-info">
           <div className="catalog-item-info__name">{title}</div>

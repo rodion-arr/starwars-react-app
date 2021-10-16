@@ -20,10 +20,18 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0, rgba(0, 0, 0, 0.06) 0 1px 2px 0;
     background-color: rgba(255, 255, 255, 0.5);
     padding-top: 2px;
+    height: 207px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
       height: 200px;
       max-width: 340px;
+
+      &.img-placeholder {
+        max-height: 100px;
+      }
     }
   }
 
