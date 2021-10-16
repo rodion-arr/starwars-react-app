@@ -3,12 +3,15 @@ const axios = require('axios').default;
 const fs = require('fs').promises;
 const path = require('path');
 
-const swApiBaseUrl = 'https://swapi.dev/api';
 const apis = ['planets', 'films', 'vehicles', 'starships', 'species', 'people'];
 
 const getIdFromApiUrl = (url) => {
+  if (!url) {
+    return null;
+  }
+
   apis.map((resource) => {
-    url = url.replace(`http://swapi.dev/api/${resource}/`, '');
+    url = url.replace(`https://swapi.dev/api/${resource}/`, '');
   })
   return url.replace('/', '');
 }
@@ -80,7 +83,6 @@ const fetchPlanets = async () => {
   }
 };
 
-
 const fetchSpecies = async () => {
   let next = 'https://swapi.dev/api/species';
   const data = {};
@@ -96,6 +98,7 @@ const fetchSpecies = async () => {
       result.data.results.map((entity) => {
         // convert resource URLs to primary keys
         entity.id = getIdFromApiUrl(entity.url);
+        entity.homeworld = getIdFromApiUrl(entity.homeworld);
         entity.people = entity.people.map(item => getIdFromApiUrl(item));
         entity.films = entity.films.map(item => getIdFromApiUrl(item));
         delete entity.url;

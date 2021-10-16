@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { CharDetail } from './CharDetail';
+import { SpecieDetail } from './SpecieDetail';
 import {AppState} from "../../store/root.reducer";
 
 const mapState = (state: AppState) => ({
@@ -15,5 +15,5 @@ const mapDispatch = {};
 
 export const connector = connect(mapState, mapDispatch);
 
-const ConnectedCharDetail = connect(mapState, mapDispatch)(CharDetail);
-export default ConnectedCharDetail;
+const ConnectedSpecieDetail = connect(mapState, mapDispatch)(SpecieDetail);
+export default ConnectedSpecieDetail;

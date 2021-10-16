@@ -10,7 +10,10 @@ export const URI = Object.freeze({
     base: `${base}planets`,
     detail: `${base}planets/:id`,
   },
-  species: `${base}species`,
+  species: {
+    base: `${base}species`,
+    detail: `${base}species/:id`
+  },
   vehicles: `${base}vehicles`,
   films: {
     base: `${base}films`,
