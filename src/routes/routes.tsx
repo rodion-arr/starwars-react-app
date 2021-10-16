@@ -16,6 +16,7 @@ const FilmDetail = React.lazy(() => import('../pages/FilmDetail/ConnectedFilmDet
 const PlanetDetail = React.lazy(() => import('../pages/PlanetDetail/ConnectedPlanetDetail'));
 const SpecieDetail = React.lazy(() => import('../pages/SpecieDetail/ConnectedSpecieDetail'));
 const VehicleDetail = React.lazy(() => import('../pages/VehicleDetail/ConnectedVehicleDetail'));
+const StarshipDetail = React.lazy(() => import('../pages/StarshipDetail/ConnectedStarshipDetail'));
 
 export const routesConfig: RouteConfig[] = [
   {
@@ -63,8 +64,13 @@ export const routesConfig: RouteConfig[] = [
         component: SpecieDetail,
       },
       {
-        path: URI.starships,
+        path: URI.starships.base,
         component: Starships,
+        exact: true,
+      },
+      {
+        path: URI.starships.detail,
+        component: StarshipDetail,
       },
       {
         path: URI.vehicles.base,

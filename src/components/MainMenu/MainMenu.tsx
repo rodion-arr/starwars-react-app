@@ -42,7 +42,7 @@ export const MainMenu = (): JSX.Element => {
                 <div className="side-menu-items__item"><NavLink to={URI.species.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Species</NavLink></div>
                 <div className="side-menu-items__item"><NavLink to={URI.vehicles.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Vehicles</NavLink></div>
                 <div className="side-menu-items__item"><NavLink to={URI.films.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Films</NavLink></div>
-                <div className="side-menu-items__item"><NavLink to={URI.starships} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Starships</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.starships.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Starships</NavLink></div>
               </div>
               <div className="sidebar-menu__social">
                 <SocialLinks />
