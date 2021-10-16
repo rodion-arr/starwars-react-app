@@ -22,7 +22,7 @@ export function Home({
     <CatalogCategory title="People" categoryUrl={URI.people.base} items={DbService.getCategoryItems(['1', '2', '3', '4', '5', '6'], people)} />
     <CatalogCategory title="Species" categoryUrl={URI.species.base} items={DbService.getCategoryItems(['1', '2', '3', '4', '5', '6'], species)} />
     <CatalogCategory title="Planets" categoryUrl={URI.planets.base} items={DbService.getCategoryItems(['1', '2', '3', '4', '5', '6'], planets)} />
-    <CatalogCategory title="Vehicles" categoryUrl={URI.vehicles} items={DbService.getCategoryItems(['4', '16', '6', '7', '14', '18'], vehicles)} />
+    <CatalogCategory title="Vehicles" categoryUrl={URI.vehicles.base} items={DbService.getCategoryItems(['4', '16', '6', '7', '14', '18'], vehicles)} />
     <CatalogCategory title="Starships" categoryUrl={URI.starships} items={DbService.getCategoryItems(['2', '3', '5', '9', '10', '12'], starships)} />
     <CatalogCategory title="Films"  categoryUrl={URI.films.base} items={DbService.getCategoryItems(['1', '2', '3', '4', '5', '6'], films)} />
   </>
