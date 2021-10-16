@@ -24,22 +24,17 @@ export function Home({
     return ids.filter((id) => availableIds.includes(id))
       .map(id => {
         const entity = dbObj[id];
-        return {
-          image: DbService.getImageUrl(entity),
-          title: DbService.getGetTitle(entity),
-          url: DbService.getUrl(entity),
-          id: entity.id,
-        }
+        return DbService.getCategoryProps(entity);
       });
   }
 
   return <>
     <HomeBanner />
-    <CatalogCategory title="People" categoryUrl={URI.people} items={getCategoryItems(['1', '2', '3', '4', '5'], people)} />
-    <CatalogCategory title="Species" categoryUrl={URI.species} items={getCategoryItems(['1', '2', '3', '4', '5'], species)} />
-    <CatalogCategory title="Planets" categoryUrl={URI.planets} items={getCategoryItems(['1', '2', '3', '4', '5'], planets)} />
-    <CatalogCategory title="Vehicles" categoryUrl={URI.vehicles} items={getCategoryItems(['4', '16', '6', '7', '14'], vehicles)} />
-    <CatalogCategory title="Starships" categoryUrl={URI.starships} items={getCategoryItems(['2', '3', '5', '9', '10'], starships)} />
-    <CatalogCategory title="Films"  categoryUrl={URI.films} items={getCategoryItems(['1', '2', '3', '4', '5'], films)} />
+    <CatalogCategory title="People" categoryUrl={URI.people} items={getCategoryItems(['1', '2', '3', '4', '5', '6'], people)} />
+    <CatalogCategory title="Species" categoryUrl={URI.species} items={getCategoryItems(['1', '2', '3', '4', '5', '6'], species)} />
+    <CatalogCategory title="Planets" categoryUrl={URI.planets} items={getCategoryItems(['1', '2', '3', '4', '5', '6'], planets)} />
+    <CatalogCategory title="Vehicles" categoryUrl={URI.vehicles} items={getCategoryItems(['4', '16', '6', '7', '14', '18'], vehicles)} />
+    <CatalogCategory title="Starships" categoryUrl={URI.starships} items={getCategoryItems(['2', '3', '5', '9', '10', '12'], starships)} />
+    <CatalogCategory title="Films"  categoryUrl={URI.films} items={getCategoryItems(['1', '2', '3', '4', '5', '6'], films)} />
   </>
 }

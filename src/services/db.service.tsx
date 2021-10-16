@@ -5,6 +5,7 @@ import {isPlanet} from "../store/db/entities/planet.d";
 import {isFilm} from "../store/db/entities/film.d";
 import {isVehicle} from "../store/db/entities/vehicle.d";
 import {isStarship} from "../store/db/entities/starship.d";
+import {CatalogItemProps} from "../components/Catalog/CatalogCategory/CatalogCategory";
 
 export const DbService = {
   async loadDbFile<Response>(url: string): Promise<null | Response> {
@@ -81,5 +82,22 @@ export const DbService = {
     }
 
     return dbObj.name;
+  },
+
+  getCategoryProps(entity: DbObject): CatalogItemProps {
+    return {
+      image: DbService.getImageUrl(entity),
+      title: DbService.getGetTitle(entity),
+      url: DbService.getUrl(entity),
+      id: entity.id,
+    }
+  },
+
+  getFullCategoryProps(dbObj: Record<string, DbObject>): CatalogItemProps[] {
+    const ids = Object.keys(dbObj);
+    return ids.map(id => {
+      const entity = dbObj[id];
+      return DbService.getCategoryProps(entity);
+    });
   }
 };

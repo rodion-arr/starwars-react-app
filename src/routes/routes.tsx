@@ -4,12 +4,12 @@ import {RouteConfig} from "react-router-config";
 import App from "../App";
 
 const Home = React.lazy(() => import('../pages/Home/ConnectedHome'));
-const Films = React.lazy(() => import('../pages/Films'));
-const People = React.lazy(() => import('../pages/People'));
-const Planets = React.lazy(() => import('../pages/Planets'));
-const Species = React.lazy(() => import('../pages/Species'));
-const Starships = React.lazy(() => import('../pages/Starships'));
-const Vehicles = React.lazy(() => import('../pages/Vehicles'));
+const Films = React.lazy(() => import('../pages/Films/ConnectedFilms'));
+const People = React.lazy(() => import('../pages/People/ConnectedPeople'));
+const Planets = React.lazy(() => import('../pages/Planets/ConnectedPlanets'));
+const Species = React.lazy(() => import('../pages/Species/ConnectedSpecies'));
+const Starships = React.lazy(() => import('../pages/Starships/ConnectedStarships'));
+const Vehicles = React.lazy(() => import('../pages/Vehicles/ConnectedVehicles'));
 
 export const routesConfig: RouteConfig[] = [
   {
