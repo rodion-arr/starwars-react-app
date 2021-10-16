@@ -99,5 +99,15 @@ export const DbService = {
       const entity = dbObj[id];
       return DbService.getCategoryProps(entity);
     });
-  }
+  },
+
+  getCategoryItems (ids: string[], dbObj: Record<string, DbObject>): CatalogItemProps[] {
+    const availableIds = Object.keys(dbObj);
+
+    return ids.filter((id) => availableIds.includes(id))
+      .map(id => {
+        const entity = dbObj[id];
+        return DbService.getCategoryProps(entity);
+      });
+  },
 };

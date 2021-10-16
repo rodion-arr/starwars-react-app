@@ -1,0 +1,32 @@
+.entity-detail {
+  padding-top: 5px;
+
+  &__title {
+    margin: 10px 0;
+    padding: 0 var(--global-padding);
+
+    h2 {
+      padding: 5px 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-top: solid var(--main-color) 1px;
+      border-bottom: solid var(--main-color) 1px;
+    }
+  }
+
+  &__img {
+    margin: 0 var(--global-padding);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--global-border-radius);
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-height: 500px;
+    }
+  }
+
+  &__spec {
+    margin: 0 var(--global-padding);
+  }
+}

@@ -20,7 +20,11 @@ export const CatalogCategory = ({
   title,
   items,
   categoryUrl,
-}: Props): JSX.Element => {
+}: Props): JSX.Element | null => {
+  if (items.length === 0) {
+    return null;
+  }
+
   return (
     <div className="catalog">
       <h2 className="catalog__title">
