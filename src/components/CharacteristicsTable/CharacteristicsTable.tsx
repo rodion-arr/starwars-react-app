@@ -17,7 +17,7 @@ export const CharacteristicsTable = ({
 
   return (
     <div className={`${className} detail-spec-table`}>
-      <table>
+      <table className="detail-spec-table__table">
         {charProperties.map((propName) => (<tr>
             <td>{propName}</td>
             <td>{rows[propName]}</td>

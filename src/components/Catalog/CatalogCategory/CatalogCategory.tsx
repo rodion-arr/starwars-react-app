@@ -28,7 +28,7 @@ export const CatalogCategory = ({
   return (
     <div className="catalog">
       <h2 className="catalog__title">
-        {categoryUrl && <Link to={categoryUrl}>{title}</Link>}
+        {categoryUrl && <Link className="catalog__title-link" to={categoryUrl}>{title}</Link>}
         {!categoryUrl && <>{title}</>}
       </h2>
       <div className="catalog__items catalog-items-wrap">

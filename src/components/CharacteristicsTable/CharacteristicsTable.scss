@@ -11,11 +11,11 @@
     text-transform: capitalize;
   }
 
-  table {
+  &__table {
     width: 500px;
   }
 
-  a {
+  * {
     color: inherit;
   }
 }

@@ -13,8 +13,8 @@ export const CatalogItem = ({img, title, url}: Props): JSX.Element => {
   return (
     <div className="catalog-item">
       <Link to={url} className="catalog-item__link">
-        <div className="catalog-item__img">
-          <img src={img} alt={title} onError={ImagesService.imageErrorHandler} />
+        <div className="catalog-item__img-wrap">
+          <img className="catalog-item__img" src={img} alt={title} onError={ImagesService.imageErrorHandler} />
         </div>
         <div className="catalog-item__info catalog-item-info">
           <div className="catalog-item-info__name">{title}</div>

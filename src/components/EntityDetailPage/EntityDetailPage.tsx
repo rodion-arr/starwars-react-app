@@ -18,10 +18,16 @@ export const EntityDetailPage = ({
 }: Props): JSX.Element => {
   return (
     <div className="entity-detail">
-      <div className="entity-detail__title"><h2>{name}</h2></div>
-      <div className="entity-detail__img"><img src={image} alt={name} onError={ImagesService.imageErrorHandler}/></div>
+      <div className="entity-detail__title-wrap">
+        <h2 className="entity-detail__title">{name}</h2>
+      </div>
+      <div className="entity-detail__img-wrap">
+        <img className="entity-detail__img" src={image} alt={name} onError={ImagesService.imageErrorHandler}/>
+      </div>
       {charProps && (<>
-        <div className="entity-detail__title"><h2>Characteristics</h2></div>
+        <div className="entity-detail__title-wrap">
+          <h2 className="entity-detail__title">Characteristics</h2>
+        </div>
         <CharacteristicsTable rows={charProps} className="entity-detail__spec" />
       </>)}
       {children}
