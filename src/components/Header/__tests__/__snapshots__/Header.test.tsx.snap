@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <div
+      class="header__menu burger-menu"
+    >
+      <div
+        class="burger-menu__bar"
+      />
+      <div
+        class="burger-menu__bar"
+      />
+      <div
+        class="burger-menu__bar"
+      />
+    </div>
+    <a
+      class="header__logo"
+      href="/"
+    />
+    <div
+      class="header__fork fork"
+    >
+      <a
+        href="https://github.com/rodion-arr/starwars-react-app"
+        rel="noreferrer"
+        target="_blank"
+        title="Fork me on GitHub"
+      >
+        <i
+          class="fork__github-icon"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;

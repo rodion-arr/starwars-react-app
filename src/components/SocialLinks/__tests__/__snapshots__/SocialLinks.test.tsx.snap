@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialLinks should render correctly 1`] = `
+<div>
+  <div
+    class="social-links"
+  >
+    <p
+      class="social-links__text"
+    >
+      Follow:
+    </p>
+    <ul
+      class="social-links-list"
+    >
+      <li
+        class="social-links-list__item"
+      >
+        <a
+          class="social-links-list__item--linkedin icon-wrap"
+          href="https://www.linkedin.com/in/rodionabdurakhimov/"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Rodion Abdurakhimov | LinkedIn"
+        >
+          <i
+            class="social-links-list__icon"
+          />
+        </a>
+      </li>
+      <li
+        class="social-links-list__item"
+      >
+        <a
+          class="social-links-list__item--github icon-wrap"
+          href="https://github.com/rodion-arr"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Rodion Abdurakhimov | GitHub"
+        >
+          <i
+            class="social-links-list__icon"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

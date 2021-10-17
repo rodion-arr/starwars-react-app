@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeBanner should render correctly 1`] = `
+<div>
+  <div
+    class="home-banner content-wrapper__item--full-width"
+  >
+    <div
+      class="home-banner__logo"
+    />
+    <div
+      class="home-banner__text"
+    >
+      Welcome to StarWars catalog!
+    </div>
+    <div
+      class="home-banner__scroll scroll-animation"
+      title="Scroll down for more content!"
+    >
+      <div
+        class="scroll-animation__chevron"
+      />
+      <div
+        class="scroll-animation__chevron"
+      />
+      <div
+        class="scroll-animation__chevron"
+      />
+    </div>
+  </div>
+</div>
+`;

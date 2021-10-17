@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainMenu should render correctly 1`] = `
+<div>
+  <div
+    class="header__menu burger-menu"
+  >
+    <div
+      class="burger-menu__bar"
+    />
+    <div
+      class="burger-menu__bar"
+    />
+    <div
+      class="burger-menu__bar"
+    />
+  </div>
+</div>
+`;

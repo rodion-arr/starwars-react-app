@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogItem should render correctly 1`] = `
+<div>
+  <div
+    class="catalog-item"
+  >
+    <a
+      class="catalog-item__link"
+      href="/test"
+    >
+      <div
+        class="catalog-item__img-wrap"
+      >
+        <img
+          alt="test title"
+          class="catalog-item__img"
+          src="test-image"
+        />
+      </div>
+      <div
+        class="catalog-item__info catalog-item-info"
+      >
+        <div
+          class="catalog-item-info__name"
+        >
+          test title
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

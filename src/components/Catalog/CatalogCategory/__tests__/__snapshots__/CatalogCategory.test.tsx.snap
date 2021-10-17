@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogItem should not render category link on empty categoryUrl 1`] = `
+<div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      Unit test
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/test"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="test"
+              class="catalog-item__img"
+              src=""
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              test
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CatalogItem should not render with empty items 1`] = `<div />`;
+
+exports[`CatalogItem should render correctly 1`] = `
+<div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      <a
+        class="catalog__title-link"
+        href="/unit-test"
+      >
+        Unit test
+      </a>
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/test"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="test"
+              class="catalog-item__img"
+              src=""
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              test
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

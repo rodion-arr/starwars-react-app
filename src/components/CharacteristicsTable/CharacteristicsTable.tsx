@@ -18,11 +18,13 @@ export const CharacteristicsTable = ({
   return (
     <div className={`${className} detail-spec-table`}>
       <table className="detail-spec-table__table">
-        {charProperties.map((propName) => (<tr>
-            <td>{propName}</td>
-            <td>{rows[propName]}</td>
-          </tr>
-        ))}
+        <tbody>
+          {charProperties.map((propName, index) => (<tr key={index}>
+              <td>{propName}</td>
+              <td>{rows[propName]}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
