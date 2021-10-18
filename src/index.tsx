@@ -1,17 +1,16 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
-import {Suspense} from "react";
 import {renderRoutes} from "react-router-config";
 import {routesConfig} from "./routes/routes";
 import {BrowserRouter as Router} from "react-router-dom";
 import './index.css';
 import {Provider} from "react-redux";
-import {state} from "./store/store";
+import {store} from "./store/store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={state}>
+    <Provider store={store}>
       <Router>
         <Suspense fallback={<div>Loading.....</div>}>
           {renderRoutes(routesConfig)}
