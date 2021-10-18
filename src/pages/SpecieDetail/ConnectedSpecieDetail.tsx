@@ -7,8 +7,6 @@ const mapState = (state: AppState) => ({
   planets: state.db.planets,
   films: state.db.films,
   species: state.db.species,
-  vehicles: state.db.vehicles,
-  starships: state.db.starships,
 });
 
 const mapDispatch = {};

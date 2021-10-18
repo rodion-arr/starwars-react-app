@@ -12,13 +12,11 @@ export function SpecieDetail({
   people,
   species,
   planets,
-  vehicles,
-  starships,
   films,
 }: SpecieDetailProps): JSX.Element | null {
   const { id } = useParams<DetailPageParams>();
 
-  if (!people || !species || !planets || !vehicles || !starships || !films) {
+  if (!people || !species || !planets || !films) {
     return null;
   }
 

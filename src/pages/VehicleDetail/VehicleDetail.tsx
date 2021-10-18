@@ -8,15 +8,12 @@ import {EntityDetailPage} from "../../components/EntityDetailPage/EntityDetailPa
 
 export function VehicleDetail({
   people,
-  species,
-  planets,
   vehicles,
-  starships,
   films,
 }: VehicleDetailProps): JSX.Element | null {
   const { id } = useParams<DetailPageParams>();
 
-  if (!people || !species || !planets || !vehicles || !starships || !films) {
+  if (!people || !vehicles || !films) {
     return null;
   }
 

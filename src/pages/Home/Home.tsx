@@ -1,5 +1,5 @@
 import {HomeBanner} from "../../components/HomeBanner/HomeBanner";
-import {CatalogCategory, CatalogItemProps} from "../../components/Catalog/CatalogCategory/CatalogCategory";
+import {CatalogCategory} from "../../components/Catalog/CatalogCategory/CatalogCategory";
 import React from "react";
 import {HomeProps} from "./types";
 import {DbService} from "../../services/db.service";

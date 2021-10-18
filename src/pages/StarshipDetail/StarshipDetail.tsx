@@ -8,15 +8,12 @@ import {EntityDetailPage} from "../../components/EntityDetailPage/EntityDetailPa
 
 export function StarshipDetail({
   people,
-  species,
-  planets,
-  vehicles,
   starships,
   films,
 }: StarshipDetailProps): JSX.Element | null {
   const { id } = useParams<DetailPageParams>();
 
-  if (!people || !species || !planets || !vehicles || !starships || !films) {
+  if (!people || !starships || !films) {
     return null;
   }
 
