@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharDetail should render correctly 1`] = `
+<div>
+  <div
+    class="entity-detail"
+  >
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        Luke Skywalker
+      </h2>
+    </div>
+    <div
+      class="entity-detail__img-wrap"
+    >
+      <img
+        alt="Luke Skywalker"
+        class="entity-detail__img"
+        src="/assets/content/people/1.png"
+      />
+    </div>
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        Characteristics
+      </h2>
+    </div>
+    <div
+      class="entity-detail__spec detail-spec-table"
+    >
+      <table
+        class="detail-spec-table__table"
+      >
+        <tbody>
+          <tr>
+            <td>
+              Height
+            </td>
+            <td>
+              172
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Mass
+            </td>
+            <td>
+              77
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Hair color
+            </td>
+            <td>
+              blond
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Skin color
+            </td>
+            <td>
+              fair
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Eye color
+            </td>
+            <td>
+              blue
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Birth year
+            </td>
+            <td>
+              19BBY
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Gender
+            </td>
+            <td>
+              male
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Home world
+            </td>
+            <td>
+              <a
+                href="/planets/1"
+              >
+                Tatooine
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Films
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/films/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="A New Hope"
+                class="catalog-item__img"
+                src="/assets/content/films/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                A New Hope
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Species
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/species/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="Human"
+                class="catalog-item__img"
+                src="/assets/content/species/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                Human
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Vehicles
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/vehicles/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="Sand Crawler"
+                class="catalog-item__img"
+                src="/assets/content/vehicles/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                Sand Crawler
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Starships
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/starships/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="CR90 corvette"
+                class="catalog-item__img"
+                src="/assets/content/starships/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                CR90 corvette
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
