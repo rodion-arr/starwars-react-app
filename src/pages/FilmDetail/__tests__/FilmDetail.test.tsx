@@ -5,9 +5,9 @@ import {Provider} from "react-redux";
 import reactRouter from "react-router";
 import { BrowserRouter as Router } from "react-router-dom"
 import {rootReducer} from "../../../store/root.reducer";
-import ConnectedCharDetail from "../ConnectedCharDetail";
+import ConnectedFilmDetail from "../ConnectedFilmDetail";
 
-describe('CharDetail', () => {
+describe('FilmDetail', () => {
   it('should render correctly', function () {
     jest.spyOn(reactRouter, 'useParams').mockImplementationOnce(() => ({id: '1'}));
 
@@ -19,7 +19,7 @@ describe('CharDetail', () => {
     const {container} = render(
       <Provider store={storeMock}>
         <Router>
-          <ConnectedCharDetail />
+          <ConnectedFilmDetail />
         </Router>
       </Provider>);
 
@@ -37,7 +37,7 @@ describe('CharDetail', () => {
     const {container} = render(
       <Provider store={storeMock}>
         <Router>
-          <ConnectedCharDetail />
+          <ConnectedFilmDetail />
         </Router>
       </Provider>);
 
