@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Films should not render if no data 1`] = `<div />`;
+
+exports[`Films should render correctly 1`] = `
+<div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      Films
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/films/1"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="A New Hope"
+              class="catalog-item__img"
+              src="/assets/content/films/1.png"
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              A New Hope
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
