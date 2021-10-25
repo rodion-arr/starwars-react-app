@@ -5,9 +5,9 @@ import {Provider} from "react-redux";
 import reactRouter from "react-router";
 import { BrowserRouter as Router } from "react-router-dom"
 import {rootReducer} from "../../../store/root.reducer";
-import ConnectedFilms from "../ConnectedFilms";
+import ConnectedHome from "../ConnectedHome";
 
-describe('Films', () => {
+describe('Home', () => {
   it('should render correctly', function () {
     const storeMock = configureStore({
       reducer: rootReducer,
@@ -17,7 +17,7 @@ describe('Films', () => {
     const {container} = render(
       <Provider store={storeMock}>
         <Router>
-          <ConnectedFilms />
+          <ConnectedHome />
         </Router>
       </Provider>);
 
@@ -33,7 +33,7 @@ describe('Films', () => {
     const {container} = render(
       <Provider store={storeMock}>
         <Router>
-          <ConnectedFilms />
+          <ConnectedHome />
         </Router>
       </Provider>);
 

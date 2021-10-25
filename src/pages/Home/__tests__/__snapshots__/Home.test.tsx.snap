@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should not render if no data 1`] = `<div />`;
+
+exports[`Home should render correctly 1`] = `
+<div>
+  <div
+    class="home-banner content-wrapper__item--full-width"
+  >
+    <div
+      class="home-banner__logo"
+    />
+    <div
+      class="home-banner__text"
+    >
+      Welcome to StarWars catalog!
+    </div>
+    <div
+      class="home-banner__scroll scroll-animation"
+      title="Scroll down for more content!"
+    >
+      <div
+        class="scroll-animation__chevron"
+      />
+      <div
+        class="scroll-animation__chevron"
+      />
+      <div
+        class="scroll-animation__chevron"
+      />
+    </div>
+  </div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      <a
+        class="catalog__title-link"
+        href="/people"
+      >
+        People
+      </a>
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/people/1"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="Luke Skywalker"
+              class="catalog-item__img"
+              src="/assets/content/people/1.png"
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              Luke Skywalker
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      <a
+        class="catalog__title-link"
+        href="/species"
+      >
+        Species
+      </a>
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/species/1"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="Human"
+              class="catalog-item__img"
+              src="/assets/content/species/1.png"
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              Human
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      <a
+        class="catalog__title-link"
+        href="/planets"
+      >
+        Planets
+      </a>
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/planets/1"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="Tatooine"
+              class="catalog-item__img"
+              src="/assets/content/planets/1.png"
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              Tatooine
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      <a
+        class="catalog__title-link"
+        href="/films"
+      >
+        Films
+      </a>
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/films/1"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="A New Hope"
+              class="catalog-item__img"
+              src="/assets/content/films/1.png"
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              A New Hope
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
