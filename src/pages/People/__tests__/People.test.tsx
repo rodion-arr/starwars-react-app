@@ -4,9 +4,9 @@ import {render} from "@testing-library/react";
 import {Provider} from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom"
 import {rootReducer} from "../../../store/root.reducer";
-import ConnectedFilms from "../ConnectedFilms";
+import ConnectedPeople from "../ConnectedPeople";
 
-describe('Films', () => {
+describe('People', () => {
   it('should render correctly', function () {
     const storeMock = configureStore({
       reducer: rootReducer,
@@ -16,7 +16,7 @@ describe('Films', () => {
     const {container} = render(
       <Provider store={storeMock}>
         <Router>
-          <ConnectedFilms />
+          <ConnectedPeople />
         </Router>
       </Provider>);
 
@@ -32,7 +32,7 @@ describe('Films', () => {
     const {container} = render(
       <Provider store={storeMock}>
         <Router>
-          <ConnectedFilms />
+          <ConnectedPeople />
         </Router>
       </Provider>);
 
