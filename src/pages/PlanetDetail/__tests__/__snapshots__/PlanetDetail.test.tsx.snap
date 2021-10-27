@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlanetDetail should not render if no data 1`] = `<div />`;
+
+exports[`PlanetDetail should render correctly 1`] = `
+<div>
+  <div
+    class="entity-detail"
+  >
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        Tatooine
+      </h2>
+    </div>
+    <div
+      class="entity-detail__img-wrap"
+    >
+      <img
+        alt="Tatooine"
+        class="entity-detail__img"
+        src="/assets/content/planets/1.png"
+      />
+    </div>
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        Characteristics
+      </h2>
+    </div>
+    <div
+      class="entity-detail__spec detail-spec-table"
+    >
+      <table
+        class="detail-spec-table__table"
+      >
+        <tbody>
+          <tr>
+            <td>
+              rotation period
+            </td>
+            <td>
+              23
+            </td>
+          </tr>
+          <tr>
+            <td>
+              orbital period
+            </td>
+            <td>
+              304
+            </td>
+          </tr>
+          <tr>
+            <td>
+              diameter
+            </td>
+            <td>
+              10465
+            </td>
+          </tr>
+          <tr>
+            <td>
+              climate
+            </td>
+            <td>
+              arid
+            </td>
+          </tr>
+          <tr>
+            <td>
+              gravity
+            </td>
+            <td>
+              1 standard
+            </td>
+          </tr>
+          <tr>
+            <td>
+              terrain
+            </td>
+            <td>
+              desert
+            </td>
+          </tr>
+          <tr>
+            <td>
+              surface water
+            </td>
+            <td>
+              1
+            </td>
+          </tr>
+          <tr>
+            <td>
+              population
+            </td>
+            <td>
+              200000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Residents
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/people/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="Luke Skywalker"
+                class="catalog-item__img"
+                src="/assets/content/people/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                Luke Skywalker
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Films
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/films/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="A New Hope"
+                class="catalog-item__img"
+                src="/assets/content/films/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                A New Hope
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
