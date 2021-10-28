@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Planets should not render if no data 1`] = `<div />`;
+
+exports[`Planets should render correctly 1`] = `
+<div>
+  <div
+    class="catalog"
+  >
+    <h2
+      class="catalog__title"
+    >
+      Planets
+    </h2>
+    <div
+      class="catalog__items catalog-items-wrap"
+    >
+      <div
+        class="catalog-item"
+      >
+        <a
+          class="catalog-item__link"
+          href="/planets/1"
+        >
+          <div
+            class="catalog-item__img-wrap"
+          >
+            <img
+              alt="Tatooine"
+              class="catalog-item__img"
+              src="/assets/content/planets/1.png"
+            />
+          </div>
+          <div
+            class="catalog-item__info catalog-item-info"
+          >
+            <div
+              class="catalog-item-info__name"
+            >
+              Tatooine
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
