@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StarshipDetail should not render if no data 1`] = `<div />`;
+
+exports[`StarshipDetail should render correctly 1`] = `
+<div>
+  <div
+    class="entity-detail"
+  >
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        CR90 corvette
+      </h2>
+    </div>
+    <div
+      class="entity-detail__img-wrap"
+    >
+      <img
+        alt="CR90 corvette"
+        class="entity-detail__img"
+        src="/assets/content/starships/1.png"
+      />
+    </div>
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        Characteristics
+      </h2>
+    </div>
+    <div
+      class="entity-detail__spec detail-spec-table"
+    >
+      <table
+        class="detail-spec-table__table"
+      >
+        <tbody>
+          <tr>
+            <td>
+              model
+            </td>
+            <td>
+              CR90 corvette
+            </td>
+          </tr>
+          <tr>
+            <td>
+              manufacturer
+            </td>
+            <td>
+              Corellian Engineering Corporation
+            </td>
+          </tr>
+          <tr>
+            <td>
+              cost in credits
+            </td>
+            <td>
+              3500000
+            </td>
+          </tr>
+          <tr>
+            <td>
+              length
+            </td>
+            <td>
+              150
+            </td>
+          </tr>
+          <tr>
+            <td>
+              max atmosphering speed
+            </td>
+            <td>
+              950
+            </td>
+          </tr>
+          <tr>
+            <td>
+              crew
+            </td>
+            <td>
+              30-165
+            </td>
+          </tr>
+          <tr>
+            <td>
+              passengers
+            </td>
+            <td>
+              600
+            </td>
+          </tr>
+          <tr>
+            <td>
+              cargo capacity
+            </td>
+            <td>
+              3000000
+            </td>
+          </tr>
+          <tr>
+            <td>
+              consumables
+            </td>
+            <td>
+              1 year
+            </td>
+          </tr>
+          <tr>
+            <td>
+              hyperdrive rating
+            </td>
+            <td>
+              2.0
+            </td>
+          </tr>
+          <tr>
+            <td>
+              MGLT
+            </td>
+            <td>
+              60
+            </td>
+          </tr>
+          <tr>
+            <td>
+              starship_class
+            </td>
+            <td>
+              corvette
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Films
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/films/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="A New Hope"
+                class="catalog-item__img"
+                src="/assets/content/films/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                A New Hope
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
