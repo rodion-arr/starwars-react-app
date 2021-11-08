@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VehicleDetail should not render if no data 1`] = `<div />`;
+
+exports[`VehicleDetail should render correctly 1`] = `
+<div>
+  <div
+    class="entity-detail"
+  >
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        Sand Crawler
+      </h2>
+    </div>
+    <div
+      class="entity-detail__img-wrap"
+    >
+      <img
+        alt="Sand Crawler"
+        class="entity-detail__img"
+        src="/assets/content/vehicles/1.png"
+      />
+    </div>
+    <div
+      class="entity-detail__title-wrap"
+    >
+      <h2
+        class="entity-detail__title"
+      >
+        Characteristics
+      </h2>
+    </div>
+    <div
+      class="entity-detail__spec detail-spec-table"
+    >
+      <table
+        class="detail-spec-table__table"
+      >
+        <tbody>
+          <tr>
+            <td>
+              model
+            </td>
+            <td>
+              Digger Crawler
+            </td>
+          </tr>
+          <tr>
+            <td>
+              manufacturer
+            </td>
+            <td>
+              Corellia Mining Corporation
+            </td>
+          </tr>
+          <tr>
+            <td>
+              cost in credits
+            </td>
+            <td>
+              150000
+            </td>
+          </tr>
+          <tr>
+            <td>
+              length
+            </td>
+            <td>
+              36.8 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              max atmosphering speed
+            </td>
+            <td>
+              30
+            </td>
+          </tr>
+          <tr>
+            <td>
+              crew
+            </td>
+            <td>
+              46
+            </td>
+          </tr>
+          <tr>
+            <td>
+              passengers
+            </td>
+            <td>
+              30
+            </td>
+          </tr>
+          <tr>
+            <td>
+              cargo capacity
+            </td>
+            <td>
+              50000
+            </td>
+          </tr>
+          <tr>
+            <td>
+              consumables
+            </td>
+            <td>
+              2 months
+            </td>
+          </tr>
+          <tr>
+            <td>
+              vehicle class
+            </td>
+            <td>
+              wheeled
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="catalog"
+    >
+      <h2
+        class="catalog__title"
+      >
+        Films
+      </h2>
+      <div
+        class="catalog__items catalog-items-wrap"
+      >
+        <div
+          class="catalog-item"
+        >
+          <a
+            class="catalog-item__link"
+            href="/films/1"
+          >
+            <div
+              class="catalog-item__img-wrap"
+            >
+              <img
+                alt="A New Hope"
+                class="catalog-item__img"
+                src="/assets/content/films/1.png"
+              />
+            </div>
+            <div
+              class="catalog-item__info catalog-item-info"
+            >
+              <div
+                class="catalog-item-info__name"
+              >
+                A New Hope
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

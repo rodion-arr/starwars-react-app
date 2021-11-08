@@ -45,7 +45,7 @@ export const DbService = {
       return `${baseImageFolder}/starships/${dbObj.id}.png`;
     }
 
-    return '';
+    return '/assets/no-image.png';
   },
 
   getUrl(dbObj: DbObject): string {

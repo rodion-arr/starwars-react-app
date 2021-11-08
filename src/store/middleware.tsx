@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import {createLogger} from "redux-logger";
 import {Middleware} from "redux";
 
