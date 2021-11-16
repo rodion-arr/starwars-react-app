@@ -1,6 +1,6 @@
 # StarWars React App
 
-[![test](https://github.com/rodion-arr/starwars-react-app/workflows/Test/badge.svg)](https://github.com/rodion-arr/starwars-react-app/actions?query=workflow%3A%22Test%22)
+[![test](https://github.com/rodion-arr/starwars-react-app/workflows/Test/badge.svg)](https://github.com/rodion-arr/starwars-react-app/actions?query=workflow%3A%22Test%22) [![codecov](https://codecov.io/gh/rodion-arr/starwars-react-app/branch/master/graph/badge.svg?token=BVNEMK1BXP)](https://codecov.io/gh/rodion-arr/starwars-react-app)
 
 An SPA app built using React, TypeScript, Redux and SCSS.
 
