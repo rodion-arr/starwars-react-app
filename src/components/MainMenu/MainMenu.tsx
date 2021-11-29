@@ -24,6 +24,10 @@ export const MainMenu = (): JSX.Element => {
     document.body.classList.remove('side-menu-opened');
   }
 
+  const activeNavLinkHandler = ({ isActive }: {
+    isActive: boolean;
+  }) => `side-menu-items__link ${isActive ? 'side-menu-items__link--active' : ''}`;
+
   return (
     <>
       <div className="header__menu burger-menu" onClick={openMenu}>
@@ -36,13 +40,13 @@ export const MainMenu = (): JSX.Element => {
           <div className="sidebar">
             <div className="sidebar__menu sidebar-menu">
               <div className="sidebar-menu__items side-menu-items">
-                <div className="side-menu-items__item"><NavLink to={URI.home} className="side-menu-items__link" activeClassName="side-menu-items__link--active" exact>Home</NavLink></div>
-                <div className="side-menu-items__item"><NavLink to={URI.people.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">People</NavLink></div>
-                <div className="side-menu-items__item"><NavLink to={URI.planets.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Planets</NavLink></div>
-                <div className="side-menu-items__item"><NavLink to={URI.species.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Species</NavLink></div>
-                <div className="side-menu-items__item"><NavLink to={URI.vehicles.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Vehicles</NavLink></div>
-                <div className="side-menu-items__item"><NavLink to={URI.films.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Films</NavLink></div>
-                <div className="side-menu-items__item"><NavLink to={URI.starships.base} className="side-menu-items__link" activeClassName="side-menu-items__link--active">Starships</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.home} className={activeNavLinkHandler} end>Home</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.people.base} className={activeNavLinkHandler}>People</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.planets.base} className={activeNavLinkHandler}>Planets</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.species.base} className={activeNavLinkHandler}>Species</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.vehicles.base} className={activeNavLinkHandler}>Vehicles</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.films.base} className={activeNavLinkHandler}>Films</NavLink></div>
+                <div className="side-menu-items__item"><NavLink to={URI.starships.base} className={activeNavLinkHandler}>Starships</NavLink></div>
               </div>
               <div className="sidebar-menu__social">
                 <SocialLinks />

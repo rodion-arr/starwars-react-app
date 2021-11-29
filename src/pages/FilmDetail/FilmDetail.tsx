@@ -1,7 +1,6 @@
 import React from "react";
 import {FilmDetailProps} from "./types";
 import {useParams} from "react-router";
-import {DetailPageParams} from "../types";
 import {DbService} from "../../services/db.service";
 import {CatalogCategory} from "../../components/Catalog/CatalogCategory/CatalogCategory";
 import {EntityDetailPage} from "../../components/EntityDetailPage/EntityDetailPage";
@@ -14,9 +13,9 @@ export function FilmDetail({
   starships,
   films,
 }: FilmDetailProps): JSX.Element | null {
-  const { id } = useParams<DetailPageParams>();
+  const { id } = useParams<'id'>();
 
-  if (!people || !species || !planets || !vehicles || !starships || !films) {
+  if (!people || !species || !planets || !vehicles || !starships || !films || !id) {
     return null;
   }
 

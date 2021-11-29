@@ -1,7 +1,7 @@
 import React from "react";
 import {URI} from "./uri";
-import {RouteConfig} from "react-router-config";
 import App from "../App";
+import {RouteObject} from "react-router";
 
 const Home = React.lazy(() => import('../pages/Home/ConnectedHome'));
 const Films = React.lazy(() => import('../pages/Films/ConnectedFilms'));
@@ -18,68 +18,61 @@ const SpecieDetail = React.lazy(() => import('../pages/SpecieDetail/ConnectedSpe
 const VehicleDetail = React.lazy(() => import('../pages/VehicleDetail/ConnectedVehicleDetail'));
 const StarshipDetail = React.lazy(() => import('../pages/StarshipDetail/ConnectedStarshipDetail'));
 
-export const routesConfig: RouteConfig[] = [
+export const routesConfig: RouteObject[] = [
   {
-    component: App,
-    routes: [
+    element: <App />,
+    children: [
       {
         path: URI.home,
-        exact: true,
-        component: Home,
+        element: <Home />,
       },
       {
         path: URI.films.base,
-        component: Films,
-        exact: true,
+        element: <Films />,
       },
       {
         path: URI.films.detail,
-        component: FilmDetail,
+        element: <FilmDetail />,
       },
       {
         path: URI.people.base,
-        component: People,
-        exact: true,
+        element: <People />,
       },
       {
         path: URI.people.detail,
-        component: CharDetail,
+        element: <CharDetail />,
       },
       {
         path: URI.planets.base,
-        component: Planets,
-        exact: true,
+        element: <Planets />,
       },
       {
         path: URI.planets.detail,
-        component: PlanetDetail,
+        element: <PlanetDetail />,
       },
       {
         path: URI.species.base,
-        component: Species,
-        exact: true,
+        element: <Species />,
       },
       {
         path: URI.species.detail,
-        component: SpecieDetail,
+        element: <SpecieDetail />,
       },
       {
         path: URI.starships.base,
-        component: Starships,
-        exact: true,
+        element: <Starships />,
       },
       {
         path: URI.starships.detail,
-        component: StarshipDetail,
+        element: <StarshipDetail />,
       },
       {
         path: URI.vehicles.base,
-        component: Vehicles,
-        exact: true,
+        element: <Vehicles />,
       },
       {
         path: URI.vehicles.detail,
-        component: VehicleDetail,
+        element: <VehicleDetail />,
       },
     ],
   },

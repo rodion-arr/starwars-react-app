@@ -1,7 +1,6 @@
 import React from "react";
 import {VehicleDetailProps} from "./types";
 import {useParams} from "react-router";
-import {DetailPageParams} from "../types";
 import {DbService} from "../../services/db.service";
 import {CatalogCategory} from "../../components/Catalog/CatalogCategory/CatalogCategory";
 import {EntityDetailPage} from "../../components/EntityDetailPage/EntityDetailPage";
@@ -11,9 +10,9 @@ export function VehicleDetail({
   vehicles,
   films,
 }: VehicleDetailProps): JSX.Element | null {
-  const { id } = useParams<DetailPageParams>();
+  const { id } = useParams<'id'>();
 
-  if (!people || !vehicles || !films) {
+  if (!people || !vehicles || !films || !id) {
     return null;
   }
 

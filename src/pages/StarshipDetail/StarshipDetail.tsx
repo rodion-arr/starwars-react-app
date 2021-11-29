@@ -1,7 +1,6 @@
 import React from "react";
 import {StarshipDetailProps} from "./types";
 import {useParams} from "react-router";
-import {DetailPageParams} from "../types";
 import {DbService} from "../../services/db.service";
 import {CatalogCategory} from "../../components/Catalog/CatalogCategory/CatalogCategory";
 import {EntityDetailPage} from "../../components/EntityDetailPage/EntityDetailPage";
@@ -11,9 +10,9 @@ export function StarshipDetail({
   starships,
   films,
 }: StarshipDetailProps): JSX.Element | null {
-  const { id } = useParams<DetailPageParams>();
+  const { id } = useParams<'id'>();
 
-  if (!people || !starships || !films) {
+  if (!people || !starships || !films || !id) {
     return null;
   }
 
