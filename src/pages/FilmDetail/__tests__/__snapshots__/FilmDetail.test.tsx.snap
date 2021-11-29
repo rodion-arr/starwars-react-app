@@ -120,6 +120,7 @@ freedom to the galaxy....
               <img
                 alt="Luke Skywalker"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/people/1.png"
               />
             </div>
@@ -160,6 +161,7 @@ freedom to the galaxy....
               <img
                 alt="Tatooine"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/planets/1.png"
               />
             </div>
@@ -200,6 +202,7 @@ freedom to the galaxy....
               <img
                 alt="CR90 corvette"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/starships/1.png"
               />
             </div>
@@ -240,6 +243,7 @@ freedom to the galaxy....
               <img
                 alt="Sand Crawler"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/vehicles/1.png"
               />
             </div>
@@ -280,6 +284,7 @@ freedom to the galaxy....
               <img
                 alt="Human"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/species/1.png"
               />
             </div>

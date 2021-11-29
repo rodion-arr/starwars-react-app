@@ -28,6 +28,7 @@ exports[`People should render correctly 1`] = `
             <img
               alt="Luke Skywalker"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/people/1.png"
             />
           </div>

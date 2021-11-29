@@ -28,6 +28,7 @@ exports[`Species should render correctly 1`] = `
             <img
               alt="Human"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/species/1.png"
             />
           </div>

@@ -40,11 +40,111 @@ describe('DB service', () => {
     it('should return placeholder image for unknown objects types', () => {
       expect(DbService.getImageUrl({} as DbObject)).toBe('/assets/no-image.png');
     });
+
+    it('should return correct url for people obj', () => {
+      expect(DbService.getImageUrl({
+        id: '0',
+        name: 'name',
+        height: 'height',
+        gender: 'gender',
+      } as unknown as DbObject)).toBe('/assets/content/people/0.png');
+    });
+
+    it('should return correct url for specie obj', () => {
+      expect(DbService.getImageUrl({
+        id: '0',
+        name: 'name',
+        classification: 'classification',
+        skin_colors: 'skin_colors',
+      } as unknown as DbObject)).toBe('/assets/content/species/0.png');
+    });
+
+    it('should return correct url for planet obj', () => {
+      expect(DbService.getImageUrl({
+        id: '0',
+        name: 'name',
+        rotation_period: 'rotation_period',
+      } as unknown as DbObject)).toBe('/assets/content/planets/0.png');
+    });
+
+    it('should return correct url for films obj', () => {
+      expect(DbService.getImageUrl({
+        id: '0',
+        title: 'title',
+        episode_id: 'episode_id',
+      } as unknown as DbObject)).toBe('/assets/content/films/0.png');
+    });
+
+    it('should return correct url for vehicles obj', () => {
+      expect(DbService.getImageUrl({
+        id: '0',
+        name: 'name',
+        vehicle_class: 'vehicle_class',
+      } as unknown as DbObject)).toBe('/assets/content/vehicles/0.png');
+    });
+
+    it('should return correct url for starships obj', () => {
+      expect(DbService.getImageUrl({
+        id: '0',
+        name: 'name',
+        starship_class: 'starship_class',
+      } as unknown as DbObject)).toBe('/assets/content/starships/0.png');
+    });
   });
 
   describe('getUrl', () => {
     it('should return empty string for unknown objects types', () => {
       expect(DbService.getUrl({} as DbObject)).toBe('');
+    });
+
+    it('should return correct url for people obj', () => {
+      expect(DbService.getUrl({
+        id: '0',
+        name: 'name',
+        height: 'height',
+        gender: 'gender',
+      } as unknown as DbObject)).toBe('/people/0');
+    });
+
+    it('should return correct url for specie obj', () => {
+      expect(DbService.getUrl({
+        id: '0',
+        name: 'name',
+        classification: 'classification',
+        skin_colors: 'skin_colors',
+      } as unknown as DbObject)).toBe('/species/0');
+    });
+
+    it('should return correct url for planet obj', () => {
+      expect(DbService.getUrl({
+        id: '0',
+        name: 'name',
+        rotation_period: 'rotation_period',
+      } as unknown as DbObject)).toBe('/planets/0');
+    });
+
+    it('should return correct url for films obj', () => {
+      expect(DbService.getUrl({
+        id: '0',
+        title: 'title',
+        episode_id: 'episode_id',
+      } as unknown as DbObject)).toBe('/films/0');
+    });
+
+    it('should return correct url for vehicles obj', () => {
+      expect(DbService.getUrl({
+        id: '0',
+        name: 'name',
+        vehicle_class: 'vehicle_class',
+      } as unknown as DbObject)).toBe('/vehicles/0');
+    });
+
+    it('should return correct url for starships obj', () => {
+      expect(DbService.getUrl({
+        id: '0',
+        name: 'name',
+        starship_class: 'starship_class',
+      } as unknown as DbObject)).toBe('/starships/0');
     });
   });
 });

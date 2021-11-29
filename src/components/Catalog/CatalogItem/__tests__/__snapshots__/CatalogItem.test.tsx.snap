@@ -15,6 +15,7 @@ exports[`CatalogItem should render correctly 1`] = `
         <img
           alt="test title"
           class="catalog-item__img"
+          loading="lazy"
           src="test-image"
         />
       </div>
