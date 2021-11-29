@@ -2,7 +2,6 @@ import React from "react";
 import {CharDetailProps} from "./types";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
-import {DetailPageParams} from "../types";
 import {DbService} from "../../services/db.service";
 import {CatalogCategory} from "../../components/Catalog/CatalogCategory/CatalogCategory";
 import {URI} from "../../routes/uri";
@@ -16,9 +15,9 @@ export function CharDetail({
   starships,
   films,
 }: CharDetailProps): JSX.Element | null {
-  const { id } = useParams<DetailPageParams>();
+  const { id } = useParams<'id'>();
 
-  if (!people || !species || !planets || !vehicles || !starships || !films) {
+  if (!people || !species || !planets || !vehicles || !starships || !films || !id) {
     return null;
   }
 

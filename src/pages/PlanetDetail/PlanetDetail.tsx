@@ -1,7 +1,6 @@
 import React from "react";
 import {PlanetDetailProps} from "./types";
 import {useParams} from "react-router";
-import {DetailPageParams} from "../types";
 import {DbService} from "../../services/db.service";
 import {CatalogCategory} from "../../components/Catalog/CatalogCategory/CatalogCategory";
 import {EntityDetailPage} from "../../components/EntityDetailPage/EntityDetailPage";
@@ -11,9 +10,9 @@ export function PlanetDetail({
   planets,
   films,
 }: PlanetDetailProps): JSX.Element | null {
-  const { id } = useParams<DetailPageParams>();
+  const { id } = useParams<'id'>();
 
-  if (!people || !planets || !films) {
+  if (!people || !planets || !films || !id) {
     return null;
   }
 

@@ -3,7 +3,7 @@ import {routesConfig} from "../routes";
 describe('routes', () => {
   it('should have correct routes object', () => {
     const routes: string[] = [];
-    routesConfig[0].routes?.forEach((route) => routes.push(String(route.path)));
+    routesConfig[0].children?.forEach((route) => routes.push(String(route.path)));
 
     expect(routes.includes('/')).toBe(true);
     expect(routes.includes('/people')).toBe(true);

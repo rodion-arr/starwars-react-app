@@ -2,7 +2,7 @@ import {configureStore} from "@reduxjs/toolkit";
 import {db} from "../../../../tests/fixtures/db";
 import {render} from "@testing-library/react";
 import {Provider} from "react-redux";
-import reactRouter from "react-router";
+import * as reactRouter from "react-router";
 import { BrowserRouter as Router } from "react-router-dom"
 import {rootReducer} from "../../../store/root.reducer";
 import ConnectedStarshipDetail from "../ConnectedStarshipDetail";

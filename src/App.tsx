@@ -3,10 +3,10 @@ import './App.scss';
 import {Header} from "./components/Header/Header";
 import {Footer} from "./components/Footer/Footer";
 import {PortalsEnum} from "./enums/portals.enum";
-import {renderRoutes, RouteConfig} from "react-router-config";
 import {useDb} from "./hooks/useDb";
+import {Outlet} from "react-router-dom";
 
-function App({ route }: RouteConfig) {
+function App() {
   useDb();
 
   return (
@@ -14,7 +14,7 @@ function App({ route }: RouteConfig) {
       <div className="page">
         <Header />
         <div className="content-wrapper">
-          {route && renderRoutes(route.routes)}
+          <Outlet />
         </div>
         <Footer />
       </div>
