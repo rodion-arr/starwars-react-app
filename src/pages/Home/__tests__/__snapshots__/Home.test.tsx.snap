@@ -59,6 +59,7 @@ exports[`Home should render correctly 1`] = `
             <img
               alt="Luke Skywalker"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/people/1.png"
             />
           </div>
@@ -104,6 +105,7 @@ exports[`Home should render correctly 1`] = `
             <img
               alt="Human"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/species/1.png"
             />
           </div>
@@ -149,6 +151,7 @@ exports[`Home should render correctly 1`] = `
             <img
               alt="Tatooine"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/planets/1.png"
             />
           </div>
@@ -194,6 +197,7 @@ exports[`Home should render correctly 1`] = `
             <img
               alt="A New Hope"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/films/1.png"
             />
           </div>

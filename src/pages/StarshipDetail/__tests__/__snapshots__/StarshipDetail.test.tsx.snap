@@ -164,6 +164,7 @@ exports[`StarshipDetail should render correctly 1`] = `
               <img
                 alt="A New Hope"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/films/1.png"
               />
             </div>

@@ -28,6 +28,7 @@ exports[`Vehicles should render correctly 1`] = `
             <img
               alt="Sand Crawler"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/vehicles/1.png"
             />
           </div>

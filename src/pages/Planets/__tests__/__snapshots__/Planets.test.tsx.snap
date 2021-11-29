@@ -28,6 +28,7 @@ exports[`Planets should render correctly 1`] = `
             <img
               alt="Tatooine"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/planets/1.png"
             />
           </div>

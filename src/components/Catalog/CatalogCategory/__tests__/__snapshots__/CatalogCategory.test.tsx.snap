@@ -26,6 +26,7 @@ exports[`CatalogItem should not render category link on empty categoryUrl 1`] = 
             <img
               alt="test"
               class="catalog-item__img"
+              loading="lazy"
               src=""
             />
           </div>
@@ -78,6 +79,7 @@ exports[`CatalogItem should render correctly 1`] = `
             <img
               alt="test"
               class="catalog-item__img"
+              loading="lazy"
               src=""
             />
           </div>

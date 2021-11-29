@@ -132,6 +132,7 @@ exports[`PlanetDetail should render correctly 1`] = `
               <img
                 alt="Luke Skywalker"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/people/1.png"
               />
             </div>
@@ -172,6 +173,7 @@ exports[`PlanetDetail should render correctly 1`] = `
               <img
                 alt="A New Hope"
                 class="catalog-item__img"
+                loading="lazy"
                 src="/assets/content/films/1.png"
               />
             </div>

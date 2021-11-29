@@ -28,6 +28,7 @@ exports[`Starships should render correctly 1`] = `
             <img
               alt="CR90 corvette"
               class="catalog-item__img"
+              loading="lazy"
               src="/assets/content/starships/1.png"
             />
           </div>
