@@ -20,8 +20,6 @@ export function SpecieDetail({
   }
 
   const entity = species[id];
-  console.log(planets);
-  console.log(entity.homeworld);
   const image = DbService.getImageUrl(entity);
   const entityProps: Record<string, string | JSX.Element> = {
     'classification': entity.classification,
