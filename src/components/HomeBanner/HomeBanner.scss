@@ -1,5 +1,5 @@
 .home-banner {
-  background: no-repeat center/ cover url("../../images/home-banner/banner.jpg");
+  background: no-repeat center/ cover url("../../assets/images/home-banner/banner.jpg");
   height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   justify-content: flex-end;
 
   &__logo {
-    background: no-repeat center/200px url("../../images/home-banner/banner-logo.png");
+    background: no-repeat center/200px url("../../assets/images/home-banner/banner-logo.png");
     width: 200px;
     height: 100px;
   }
