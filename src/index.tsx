@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import React, {Suspense} from 'react';
-import ReactDOM from "react-dom";
+import {createRoot} from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import {routesConfig} from "./routes/routes";
 import {BrowserRouter as Router} from "react-router-dom";
@@ -9,7 +9,9 @@ import {Provider} from "react-redux";
 import {store} from "./store/store";
 import {WithRouter} from "./components/WithRouter/WithRouter";
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
@@ -18,8 +20,7 @@ ReactDOM.render(
         </Suspense>
       </Router>
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
