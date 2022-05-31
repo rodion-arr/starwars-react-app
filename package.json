@@ -71,7 +71,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/redux-logger": "^3.0.9",
     "jest-fetch-mock": "^3.0.3",
-    "ts-jest": "^27.0.7"
+    "ts-jest": "^28.0.3"
   },
   "jest": {
     "resetMocks": false
