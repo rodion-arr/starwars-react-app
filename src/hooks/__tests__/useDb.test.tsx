@@ -1,10 +1,10 @@
 import {render, waitFor} from "@testing-library/react";
 import {Provider} from "react-redux";
 import {configureStore} from "@reduxjs/toolkit";
-import {mocked} from 'ts-jest/utils';
 import {useDb} from "../useDb";
 import {dbSlice} from "../../store/db/reducer";
 import {DbService} from "../../services/db.service";
+const {mocked} = jest;
 
 jest.mock('../../services/db.service');
 
