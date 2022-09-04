@@ -8,6 +8,7 @@ import {Planet} from "./entities/planet.d";
 import {Specie} from "./entities/specie.d";
 import {Starship} from "./entities/starship.d";
 import {Vehicle} from "./entities/vehicle.d";
+import {Timeline} from "./entities/timeline";
 
 export const dbActions = Object.freeze({
   fillPeople: createAction<Record<string, Char> | null>(types.FILL_PEOPLE),
@@ -16,6 +17,7 @@ export const dbActions = Object.freeze({
   fillSpecies: createAction<Record<string, Specie> | null>(types.FILL_SPECIES),
   fillStarships: createAction<Record<string, Starship> | null>(types.FILL_STARSHIPS),
   fillVehicles: createAction<Record<string, Vehicle> | null>(types.FILL_VEHICLES),
+  fillTimeline: createAction<Record<string, Timeline> | null>(types.FILL_TIMELINE),
 
   // Async
   getDb: createAsyncThunk<
@@ -31,5 +33,6 @@ export const dbActions = Object.freeze({
       dispatch(dbActions.fillSpecies(await DbService.loadDbFile('/db/species.json')));
       dispatch(dbActions.fillStarships(await DbService.loadDbFile('/db/starships.json')));
       dispatch(dbActions.fillVehicles(await DbService.loadDbFile('/db/vehicles.json')));
+      dispatch(dbActions.fillTimeline(await DbService.loadDbFile('/db/timeline.json')));
   }),
 });

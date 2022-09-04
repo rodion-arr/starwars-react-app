@@ -26,4 +26,7 @@ export const URI = Object.freeze({
     base: `${base}starships`,
     detail: `${base}starships/:id`,
   },
+  timeline: {
+    base: `${base}timeline`,
+  },
 });

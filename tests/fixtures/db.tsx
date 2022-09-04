@@ -117,5 +117,19 @@ export const db = {
         "id": "1"
       }
     },
+    timeline: {
+      "1":{
+        "id":"1",
+        "title":"The Phantom Menace",
+        "start":-31,
+        "end":-31
+      },
+      "2":{
+        "id":"2",
+        "title":"Attack of the Clones",
+        "start":-22,
+        "end":-22
+      }
+    }
   }
 };

@@ -10,6 +10,7 @@ const Planets = React.lazy(() => import('../pages/Planets/ConnectedPlanets'));
 const Species = React.lazy(() => import('../pages/Species/ConnectedSpecies'));
 const Starships = React.lazy(() => import('../pages/Starships/ConnectedStarships'));
 const Vehicles = React.lazy(() => import('../pages/Vehicles/ConnectedVehicles'));
+const Timeline = React.lazy(() => import('../pages/Timeline/ConnectedTimeline'));
 
 const CharDetail = React.lazy(() => import('../pages/CharDetail/ConnectedCharDetail'));
 const FilmDetail = React.lazy(() => import('../pages/FilmDetail/ConnectedFilmDetail'));
@@ -73,6 +74,10 @@ export const routesConfig: RouteObject[] = [
       {
         path: URI.vehicles.detail,
         element: <VehicleDetail />,
+      },
+      {
+        path: URI.timeline.base,
+        element: <Timeline />,
       },
     ],
   },

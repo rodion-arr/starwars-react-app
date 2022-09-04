@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelineChart should render correctly 1`] = `
+<div>
+  <div
+    class="timeline"
+  >
+    <h2
+      class="timeline__title"
+    >
+      Star Wars timeline
+    </h2>
+    <div
+      class="timeline__chart-scroll"
+    >
+      <table
+        class="timeline__chart timeline__chart--header"
+      >
+        <thead>
+          <tr
+            class="timeline__chart-row"
+          >
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              #
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              10 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              9 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              8 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              7 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              6 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              5 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              4 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              3 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              2 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              1 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              0 BBY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              1 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              2 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              3 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              4 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              5 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              6 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              7 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              8 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              9 ABY
+            </th>
+            <th
+              class="timeline__chart-col timeline__chart-col--header"
+            >
+              10 ABY
+            </th>
+          </tr>
+        </thead>
+      </table>
+      <table
+        class="timeline__chart timeline__chart--body"
+      >
+        <tbody>
+          <tr
+            class="timeline__chart-row"
+          >
+            <td
+              class="timeline__chart-col"
+            >
+              The Phantom Menace
+            </td>
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+              colspan="1"
+            >
+              <div
+                class="timeline__chart-line"
+              />
+            </td>
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
