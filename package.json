@@ -66,7 +66,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^27.5.1",
     "@types/node": "^18.7.14",
-    "@types/react": "^18.0.14",
+    "@types/react": "^18.0.19",
     "@types/react-dom": "^18.0.6",
     "@types/react-router-dom": "^5.3.3",
     "@types/redux-logger": "^3.0.9",
