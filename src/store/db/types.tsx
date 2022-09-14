@@ -3,6 +3,7 @@ import {Film} from "./entities/film.d";
 import {Planet} from "./entities/planet.d";
 import {Specie} from "./entities/specie.d";
 import {Starship} from "./entities/starship.d";
+import {Timeline} from "./entities/timeline";
 import {Vehicle} from "./entities/vehicle.d";
 
 export const types = Object.freeze({
@@ -13,6 +14,7 @@ export const types = Object.freeze({
   FILL_SPECIES: '[DB] FILL_SPECIES',
   FILL_STARSHIPS: '[DB] FILL_STARSHIPS',
   FILL_VEHICLES: '[DB] FILL_VEHICLES',
+  FILL_TIMELINE: '[DB] FILL_TIMELINE',
 });
 
 export interface DbState {
@@ -22,6 +24,7 @@ export interface DbState {
   species: Record<string, Specie> | null;
   starships: Record<string, Starship> | null;
   vehicles: Record<string, Vehicle> | null;
+  timeline: Record<string, Timeline> | null;
 }
 
-export type DbObject = Char | Film | Planet | Specie | Starship | Vehicle;
+export type DbObject = Char | Film | Planet | Specie | Starship | Vehicle | Timeline;

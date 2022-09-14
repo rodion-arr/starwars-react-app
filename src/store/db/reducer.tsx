@@ -7,6 +7,7 @@ import {Planet} from "./entities/planet.d";
 import {Specie} from "./entities/specie.d";
 import {Starship} from "./entities/starship.d";
 import {Vehicle} from "./entities/vehicle.d";
+import { Timeline } from "./entities/timeline";
 
 const initialState: DbState = {
   people: null,
@@ -15,6 +16,7 @@ const initialState: DbState = {
   species: null,
   starships: null,
   vehicles: null,
+  timeline: null,
 };
 
 export const dbSlice = createSlice({
@@ -61,6 +63,13 @@ export const dbSlice = createSlice({
       dbActions.fillVehicles.type,
       (state, action: PayloadAction<Record<string, Vehicle>>) => {
         state.vehicles = action.payload;
+      },
+    );
+
+    builder.addCase(
+      dbActions.fillTimeline.type,
+      (state, action: PayloadAction<Record<string, Timeline>>) => {
+        state.timeline = action.payload;
       },
     );
   },

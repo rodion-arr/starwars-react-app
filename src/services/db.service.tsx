@@ -6,6 +6,7 @@ import {isFilm} from "../store/db/entities/film.d";
 import {isVehicle} from "../store/db/entities/vehicle.d";
 import {isStarship} from "../store/db/entities/starship.d";
 import {CatalogItemProps} from "../components/Catalog/CatalogCategory/CatalogCategory";
+import { isTimeline } from "../store/db/entities/timeline";
 
 export const DbService = {
   async loadDbFile<Response>(url: string): Promise<null | Response> {
@@ -76,8 +77,8 @@ export const DbService = {
     return '';
   },
 
-  getGetTitle(dbObj: DbObject): string {
-    if (isFilm(dbObj)) {
+  getTitle(dbObj: DbObject): string {
+    if (isFilm(dbObj) || isTimeline(dbObj)) {
       return dbObj.title;
     }
 
@@ -87,7 +88,7 @@ export const DbService = {
   getCategoryProps(entity: DbObject): CatalogItemProps {
     return {
       image: DbService.getImageUrl(entity),
-      title: DbService.getGetTitle(entity),
+      title: DbService.getTitle(entity),
       url: DbService.getUrl(entity),
       id: entity.id,
     }

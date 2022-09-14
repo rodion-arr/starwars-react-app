@@ -29,13 +29,14 @@ describe('useDB', () => {
     render(<Provider store={store}><UseDbRenderer/></Provider>);
 
     await waitFor(() => {
-      expect(loadFileMock).toBeCalledTimes(6);
+      expect(loadFileMock).toBeCalledTimes(7);
       expect(loadFileMock).toBeCalledWith('/db/people.json');
       expect(loadFileMock).toBeCalledWith('/db/films.json');
       expect(loadFileMock).toBeCalledWith('/db/planets.json');
       expect(loadFileMock).toBeCalledWith('/db/species.json');
       expect(loadFileMock).toBeCalledWith('/db/starships.json');
       expect(loadFileMock).toBeCalledWith('/db/vehicles.json');
+      expect(loadFileMock).toBeCalledWith('/db/timeline.json');
 
       expect(store.getState()).toStrictEqual({
         "films": {"test": "unit"},
@@ -44,6 +45,7 @@ describe('useDB', () => {
         "species": {"test": "unit"},
         "starships": {"test": "unit"},
         "vehicles": {"test": "unit"},
+        "timeline": {"test": "unit"},
       });
     });
   });
