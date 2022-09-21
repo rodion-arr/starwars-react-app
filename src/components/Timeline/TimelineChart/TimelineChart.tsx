@@ -36,6 +36,14 @@ export const TimelineChart = ({ range, timeline }: Props): JSX.Element => {
     <div className="timeline">
       <h2 className="timeline__title">Star Wars timeline</h2>
 
+      <p><strong>"Star Wars timeline"</strong> is a chart that visually represents the chronological order of Star Wats movies and series.</p>
+      <p>The first column is movie/series name, the next columns are years in timeline at which this movie/series took place.</p>
+      
+      <h3>What do BBY and ABY mean?</h3>
+      <p>In Star Wars galactic history the central event a <strong>Battle of Yavin</strong> (Episode IV) is considered.</p>
+      <p>So BBY and ABY are "<strong>B</strong>efore <strong>B</strong>attle of <strong>Y</strong>avin"
+          and "<strong>A</strong>fter <strong>B</strong>attle of <strong>Y</strong>avin" respectively</p>
+
       {yearsData.length && (
         <div className="timeline__chart-scroll">
           <table className="timeline__chart timeline__chart--header">
@@ -61,12 +69,18 @@ export const TimelineChart = ({ range, timeline }: Props): JSX.Element => {
                 const { start, end } = timeline[entryId];
                 const delta = Math.abs(end - start) || 1;
 
+                // for entries more that 1 year - less cols required to render
+                let colsToRender = [...yearsData];
+                if (delta > 1) {
+                  colsToRender = colsToRender.slice(0, delta * -1);
+                }
+
                 return (
                   <tr className="timeline__chart-row" key={entryId}>
                     <td className="timeline__chart-col">
                       {timeline[entryId].title}
                     </td>
-                    {yearsData.map(({ rangeYear }) => {
+                    {colsToRender.map(({ rangeYear }) => {
                       let td = (
                         <td
                           className="timeline__chart-col"
