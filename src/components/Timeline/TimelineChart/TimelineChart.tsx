@@ -41,13 +41,13 @@ export const TimelineChart = ({ range, timeline }: Props): JSX.Element => {
     <div className={`timeline ${firstColCollapsed ? 'timeline--collapsed' : ''}`}>
       <h2 className="timeline__title">Star Wars timeline</h2>
 
-      <p><strong>"Star Wars timeline"</strong> is a chart that visually represents the chronological order of Star Wats movies and series.</p>
+      <p><strong>"Star Wars timeline"</strong> is a chart that visually represents the chronological order of Star Wars movies and series.</p>
       <p>The first column is movie/series name, the next columns are years in timeline at which this movie/series took place.</p>
       
       <h3>What do BBY and ABY mean?</h3>
-      <p>In Star Wars galactic history the central event a <strong>Battle of Yavin</strong> (Episode IV) is considered.</p>
+      <p>In Star Wars galactic history the central event is considered as <strong>Battle of Yavin</strong> (Episode IV).</p>
       <p>So BBY and ABY are "<strong>B</strong>efore <strong>B</strong>attle of <strong>Y</strong>avin"
-          and "<strong>A</strong>fter <strong>B</strong>attle of <strong>Y</strong>avin" respectively</p>
+          and "<strong>A</strong>fter <strong>B</strong>attle of <strong>Y</strong>avin" respectively. Or simply: before or after Eposide IV.</p>
 
       {yearsData.length && (
         <div className="timeline__chart-scroll">

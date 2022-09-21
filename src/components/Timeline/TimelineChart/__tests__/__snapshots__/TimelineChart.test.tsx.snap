@@ -14,7 +14,7 @@ exports[`TimelineChart should have collapse functionality 1`] = `
       <strong>
         "Star Wars timeline"
       </strong>
-       is a chart that visually represents the chronological order of Star Wats movies and series.
+       is a chart that visually represents the chronological order of Star Wars movies and series.
     </p>
     <p>
       The first column is movie/series name, the next columns are years in timeline at which this movie/series took place.
@@ -23,11 +23,11 @@ exports[`TimelineChart should have collapse functionality 1`] = `
       What do BBY and ABY mean?
     </h3>
     <p>
-      In Star Wars galactic history the central event a 
+      In Star Wars galactic history the central event is considered as 
       <strong>
         Battle of Yavin
       </strong>
-       (Episode IV) is considered.
+       (Episode IV).
     </p>
     <p>
       So BBY and ABY are "
@@ -54,7 +54,7 @@ exports[`TimelineChart should have collapse functionality 1`] = `
       <strong>
         Y
       </strong>
-      avin" respectively
+      avin" respectively. Or simply: before or after Eposide IV.
     </p>
     <div
       class="timeline__chart-scroll"
@@ -286,7 +286,7 @@ exports[`TimelineChart should render correctly 1`] = `
       <strong>
         "Star Wars timeline"
       </strong>
-       is a chart that visually represents the chronological order of Star Wats movies and series.
+       is a chart that visually represents the chronological order of Star Wars movies and series.
     </p>
     <p>
       The first column is movie/series name, the next columns are years in timeline at which this movie/series took place.
@@ -295,11 +295,11 @@ exports[`TimelineChart should render correctly 1`] = `
       What do BBY and ABY mean?
     </h3>
     <p>
-      In Star Wars galactic history the central event a 
+      In Star Wars galactic history the central event is considered as 
       <strong>
         Battle of Yavin
       </strong>
-       (Episode IV) is considered.
+       (Episode IV).
     </p>
     <p>
       So BBY and ABY are "
@@ -326,7 +326,7 @@ exports[`TimelineChart should render correctly 1`] = `
       <strong>
         Y
       </strong>
-      avin" respectively
+      avin" respectively. Or simply: before or after Eposide IV.
     </p>
     <div
       class="timeline__chart-scroll"
