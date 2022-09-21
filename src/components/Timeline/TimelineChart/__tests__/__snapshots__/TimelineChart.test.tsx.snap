@@ -537,6 +537,56 @@ exports[`TimelineChart should render correctly 1`] = `
               class="timeline__chart-col"
             />
           </tr>
+          <tr
+            class="timeline__chart-row"
+          >
+            <td
+              class="timeline__chart-col"
+            >
+              Episode 2
+            </td>
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+            />
+            <td
+              class="timeline__chart-col"
+              colspan="9"
+            >
+              <div
+                class="timeline__chart-line"
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>

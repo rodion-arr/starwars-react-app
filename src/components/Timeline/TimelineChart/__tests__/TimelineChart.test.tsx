@@ -16,6 +16,12 @@ describe("TimelineChart", () => {
             start: -9,
             end: -9,
           },
+          "1": {
+            id: "1",
+            title: "Episode 2",
+            start: 1,
+            end: 10,
+          },
         }}
       />
     );
