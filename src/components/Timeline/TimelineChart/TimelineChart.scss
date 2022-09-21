@@ -3,6 +3,19 @@
   --chart-first-col-width: 250px;
   --chart-row-height: 28px;
 
+  &--collapsed {
+    --chart-first-col-width: 90px;
+
+    .timeline__chart-row .timeline__chart-col:first-child {
+      width: var(--chart-first-col-width);
+      overflow: hidden;
+    }
+
+    .timeline__collapse {
+      transform: rotate(180deg);
+    }
+  }
+
   & {
     padding: 1px var(--global-padding);
   }
@@ -33,7 +46,7 @@
     &--header {
       position: sticky;
       top: 0;
-      z-index: 1;
+      z-index: 2;
     }
   }
 
@@ -63,6 +76,17 @@
       z-index: 1;
       box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
     }
+
+    &--first-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: var(--chart-row-height);
+
+      & > * {
+        margin-left: auto;
+      }
+    }
   }
 
   &__chart-line {
@@ -71,5 +95,19 @@
     border-radius: 200px;
     background: white;
     box-sizing: border-box;
+  }
+
+  &__collapse {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    -webkit-mask-image: url("../../../assets/images/icons/arrow.svg");
+    mask-image: url("../../../assets/images/icons/arrow.svg");
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
   }
 }

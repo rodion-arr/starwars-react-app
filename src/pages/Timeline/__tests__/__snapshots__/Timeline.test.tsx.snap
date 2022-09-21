@@ -5,13 +5,59 @@ exports[`Timeline should not render if no data 1`] = `<div />`;
 exports[`Timeline should render correctly 1`] = `
 <div>
   <div
-    class="timeline"
+    class="timeline "
   >
     <h2
       class="timeline__title"
     >
       Star Wars timeline
     </h2>
+    <p>
+      <strong>
+        "Star Wars timeline"
+      </strong>
+       is a chart that visually represents the chronological order of Star Wats movies and series.
+    </p>
+    <p>
+      The first column is movie/series name, the next columns are years in timeline at which this movie/series took place.
+    </p>
+    <h3>
+      What do BBY and ABY mean?
+    </h3>
+    <p>
+      In Star Wars galactic history the central event a 
+      <strong>
+        Battle of Yavin
+      </strong>
+       (Episode IV) is considered.
+    </p>
+    <p>
+      So BBY and ABY are "
+      <strong>
+        B
+      </strong>
+      efore 
+      <strong>
+        B
+      </strong>
+      attle of 
+      <strong>
+        Y
+      </strong>
+      avin" and "
+      <strong>
+        A
+      </strong>
+      fter 
+      <strong>
+        B
+      </strong>
+      attle of 
+      <strong>
+        Y
+      </strong>
+      avin" respectively
+    </p>
     <div
       class="timeline__chart-scroll"
     >
@@ -23,9 +69,14 @@ exports[`Timeline should render correctly 1`] = `
             class="timeline__chart-row"
           >
             <th
-              class="timeline__chart-col timeline__chart-col--header"
+              class="timeline__chart-col timeline__chart-col--header timeline__chart-col--first-cell"
             >
-              #
+              <span>
+                #
+              </span>
+              <div
+                class="timeline__collapse"
+              />
             </th>
             <th
               class="timeline__chart-col timeline__chart-col--header"
