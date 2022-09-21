@@ -18,6 +18,7 @@ export interface Props {
 
 export const TimelineChart = ({ range, timeline }: Props): JSX.Element => {
   const [yearsData, setYearsData] = useState<YearsList[]>([]);
+  const [firstColCollapsed, setFirstColCollapsed] = useState<boolean>(false);
 
   // calculate chart year title
   useEffect(() => {
@@ -32,8 +33,12 @@ export const TimelineChart = ({ range, timeline }: Props): JSX.Element => {
     setYearsData(years);
   }, [range]);
 
+  const collapseHandler = () => {
+    setFirstColCollapsed(!firstColCollapsed);
+  }
+
   return (
-    <div className="timeline">
+    <div className={`timeline ${firstColCollapsed ? 'timeline--collapsed' : ''}`}>
       <h2 className="timeline__title">Star Wars timeline</h2>
 
       <p><strong>"Star Wars timeline"</strong> is a chart that visually represents the chronological order of Star Wats movies and series.</p>
@@ -49,8 +54,9 @@ export const TimelineChart = ({ range, timeline }: Props): JSX.Element => {
           <table className="timeline__chart timeline__chart--header">
             <thead>
               <tr className="timeline__chart-row">
-                <th className="timeline__chart-col timeline__chart-col--header">
-                  #
+                <th className="timeline__chart-col timeline__chart-col--header timeline__chart-col--first-cell">
+                  <span>#</span>
+                  <div className="timeline__collapse" onClick={collapseHandler} />
                 </th>
                 {yearsData.map((year) => (
                   <th

@@ -5,7 +5,7 @@ exports[`Timeline should not render if no data 1`] = `<div />`;
 exports[`Timeline should render correctly 1`] = `
 <div>
   <div
-    class="timeline"
+    class="timeline "
   >
     <h2
       class="timeline__title"
@@ -69,9 +69,14 @@ exports[`Timeline should render correctly 1`] = `
             class="timeline__chart-row"
           >
             <th
-              class="timeline__chart-col timeline__chart-col--header"
+              class="timeline__chart-col timeline__chart-col--header timeline__chart-col--first-cell"
             >
-              #
+              <span>
+                #
+              </span>
+              <div
+                class="timeline__collapse"
+              />
             </th>
             <th
               class="timeline__chart-col timeline__chart-col--header"
